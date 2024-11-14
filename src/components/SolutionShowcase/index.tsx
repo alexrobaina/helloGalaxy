@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export const  SolutionShowcase: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-12">
