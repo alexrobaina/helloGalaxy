@@ -1,6 +1,6 @@
 'use client';
 import { PainPoint } from './PainPoint';
-import slowResponseIcon from '../../../public/AI-search.json';
+import slowResponseIcon from '../../../public/AI-Search.json';
 import turtleIcon from '../../../public/pond-turtle.json';
 import missedOpportunitiesIcon from '../../../public/laptop.json';
 
