@@ -1,3 +1,11 @@
+'use client';
+
+import { LottieAnimation } from '../LottieAnimations';
+import customerAttractionIcon from '../../assets/lottie/customerAttraction.json';
+import automation from '../../assets/lottie/automation.json';
+import aiMind from '../../assets/lottie/aiMind.json';
+import smart from '../../assets/lottie/smart.json';
+
 export const FeatureHighlight: React.FC = () => {
   return (
     <section className="bg-gray-50 py-20 px-6 md:px-12">
@@ -5,11 +13,11 @@ export const FeatureHighlight: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Why Choose Hellow Gallaxy?
+            Why Leading Businesses Choose Hello Galaxy
           </h2>
           <p className="text-lg text-gray-600 mt-4">
-            Explore the key features that make our AI solutions the perfect fit
-            for your business.
+            Discover how our enterprise AI platform delivers unmatched value through innovation,
+            reliability, and results.
           </p>
         </div>
 
@@ -17,61 +25,46 @@ export const FeatureHighlight: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Feature 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <img
-              src="/icons/customizable.svg"
-              alt="Customizable Icon"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800">
-              Customizable & Scalable
-            </h3>
+            <div className="h-[150px]">
+              <LottieAnimation width={200} animation={customerAttractionIcon} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800">Enterprise-Grade Scalability</h3>
             <p className="text-gray-600 mt-2">
-              Solutions tailored to your business needs, growing with your goals.
+              Flexible solutions that adapt to your needs, from small teams to global operations.
             </p>
           </div>
 
           {/* Feature 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <img
-              src="/icons/integration.svg"
-              alt="Integration Icon"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800">
-              Seamlessly Integrated
-            </h3>
+            <div className="h-[150px]">
+              <LottieAnimation width={220} animation={automation} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800">Seamless Integration</h3>
             <p className="text-gray-600 mt-2">
-              Effortlessly connect with CRMs, e-commerce platforms, and messaging apps.
+              Native compatibility with leading enterprise tools and platforms for immediate
+              deployment.
             </p>
           </div>
 
           {/* Feature 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <img
-              src="/icons/data-insights.svg"
-              alt="Data Insights Icon"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800">
-              Data-Driven Insights
-            </h3>
+            <div className="h-[150px]">
+              <LottieAnimation width={190} animation={smart} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800">Advanced Analytics</h3>
             <p className="text-gray-600 mt-2">
-              Make smarter decisions with actionable insights from advanced analytics.
+              Real-time insights and predictive analytics to drive strategic decision-making.
             </p>
           </div>
 
           {/* Feature 4 */}
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <img
-              src="/icons/affordable.svg"
-              alt="Affordable Icon"
-              className="w-16 h-16 mx-auto mb-4"
-            />
-            <h3 className="text-xl font-semibold text-gray-800">
-              Accessible for All
-            </h3>
+            <div className="h-[150px]">
+              <LottieAnimation width={220} animation={aiMind} />
+            </div>
+            <h3 className="text-xl font-semibold text-gray-800">ROI-Focused Solutions</h3>
             <p className="text-gray-600 mt-2">
-              Affordable AI solutions designed for startups and enterprises alike.
+              Cost-effective AI implementation with measurable business impact and rapid returns.
             </p>
           </div>
         </div>
@@ -79,5 +72,3 @@ export const FeatureHighlight: React.FC = () => {
     </section>
   );
 };
-
-
