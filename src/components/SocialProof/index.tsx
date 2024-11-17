@@ -38,11 +38,6 @@ export const SocialProof: React.FC = () => {
               unmatched!”
             </p>
             <div className="mt-4 flex items-center">
-              <img
-                src="/clients/client2.jpg"
-                alt="Client Photo"
-                className="w-12 h-12 rounded-full mr-3"
-              />
               <div>
                 <h4 className="text-gray-900 font-semibold">Sarah Lee</h4>
                 <p className="text-sm text-gray-500">Founder, E-Shop</p>
@@ -57,11 +52,6 @@ export const SocialProof: React.FC = () => {
               boosting ROI by 30%.”
             </p>
             <div className="mt-4 flex items-center">
-              <img
-                src="/clients/client3.jpg"
-                alt="Client Photo"
-                className="w-12 h-12 rounded-full mr-3"
-              />
               <div>
                 <h4 className="text-gray-900 font-semibold">Michael Smith</h4>
                 <p className="text-sm text-gray-500">CMO, Tech Solutions</p>
