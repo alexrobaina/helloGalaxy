@@ -1,5 +1,3 @@
-'use client';
-
 export const InteractiveDemo: React.FC = () => {
   return (
     <section className="bg-white py-20 px-6 md:px-12">

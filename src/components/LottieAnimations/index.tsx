@@ -1,3 +1,5 @@
+'use client';
+
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import { motion } from 'framer-motion';
 import { FC, useEffect, useRef } from 'react';
