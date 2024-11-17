@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const SocialProof: React.FC = () => {
   return (
@@ -19,20 +19,13 @@ export const SocialProof: React.FC = () => {
           {/* Testimonial 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-             {`With Hellow Gallaxy's automation tools, we reduced customer
+              {`With Hellow Gallaxy's automation tools, we reduced customer
               response times by 50%. Our team is now free to focus on more
               strategic tasks.`}
             </p>
             <div className="mt-4 flex items-center">
-              <img
-                src="/clients/client1.jpg"
-                alt="Client Photo"
-                className="w-12 h-12 rounded-full mr-3"
-              />
               <div>
-                <h4 className="text-gray-900 font-semibold">
-                  John Doe
-                </h4>
+                <h4 className="text-gray-900 font-semibold">John Doe</h4>
                 <p className="text-sm text-gray-500">CEO, Retail Inc.</p>
               </div>
             </div>
@@ -41,8 +34,8 @@ export const SocialProof: React.FC = () => {
           {/* Testimonial 2 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-              “Hellow Gallaxy’s AI bots have revolutionized our customer
-              service. The efficiency is unmatched!”
+              “Hellow Gallaxy’s AI bots have revolutionized our customer service. The efficiency is
+              unmatched!”
             </p>
             <div className="mt-4 flex items-center">
               <img
@@ -51,9 +44,7 @@ export const SocialProof: React.FC = () => {
                 className="w-12 h-12 rounded-full mr-3"
               />
               <div>
-                <h4 className="text-gray-900 font-semibold">
-                  Sarah Lee
-                </h4>
+                <h4 className="text-gray-900 font-semibold">Sarah Lee</h4>
                 <p className="text-sm text-gray-500">Founder, E-Shop</p>
               </div>
             </div>
@@ -62,8 +53,8 @@ export const SocialProof: React.FC = () => {
           {/* Testimonial 3 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <p className="text-gray-600 italic">
-              “The data insights from Hellow Gallaxy helped us make smarter
-              marketing decisions, boosting ROI by 30%.”
+              “The data insights from Hellow Gallaxy helped us make smarter marketing decisions,
+              boosting ROI by 30%.”
             </p>
             <div className="mt-4 flex items-center">
               <img
@@ -72,9 +63,7 @@ export const SocialProof: React.FC = () => {
                 className="w-12 h-12 rounded-full mr-3"
               />
               <div>
-                <h4 className="text-gray-900 font-semibold">
-                  Michael Smith
-                </h4>
+                <h4 className="text-gray-900 font-semibold">Michael Smith</h4>
                 <p className="text-sm text-gray-500">CMO, Tech Solutions</p>
               </div>
             </div>
@@ -94,4 +83,3 @@ export const SocialProof: React.FC = () => {
     </section>
   );
 };
-
