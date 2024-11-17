@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import { LottieAnimation } from '@/components/LottieAnimations';
-import { LottieComponentProps } from 'lottie-react';
 import { FC } from 'react';
 
 type PainPointProps = {
-  lottieIcon: LottieComponentProps;
+  // @ts-ignore
+  lottieIcon: unknown;
   title: string;
   description: string;
   lottieWidth: number;
