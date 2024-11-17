@@ -1,9 +1,9 @@
 'use client';
 
 import { LottieAnimation } from '../LottieAnimations';
-import customerAttractionIcon from '../../../assets/lottie/customerAttraction.json';
-import businessAnalytics from '../../../assets/lottie/businessAnalytics.json';
-import dataManagement from '../../../assets/lottie/dataManagement.json';
+import customerAttractionIcon from '../../../public/customerAttraction.json';
+import businessAnalytics from '../../../public/businessAnalytics.json';
+import dataManagement from '../../../public/dataManagement.json';
 
 export const SolutionShowcase: React.FC = () => {
   return (

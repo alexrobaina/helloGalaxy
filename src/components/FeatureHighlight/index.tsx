@@ -1,10 +1,10 @@
 'use client';
 
 import { LottieAnimation } from '../LottieAnimations';
-import customerAttractionIcon from '../../assets/lottie/customerAttraction.json';
-import automation from '../../assets/lottie/automation.json';
-import aiMind from '../../assets/lottie/aiMind.json';
-import smart from '../../assets/lottie/smart.json';
+import customerAttractionIcon from '../../../public/customerAttraction.json';
+import automation from '../../../public/automation.json';
+import aiMind from '../../../public/aiMind.json';
+import smart from '../../../public/smart.json';
 
 export const FeatureHighlight: React.FC = () => {
   return (

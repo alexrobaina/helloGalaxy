@@ -1,6 +1,6 @@
 'use client';
 import { FC } from 'react';
-import heroImage from '../../assets/lottie/conversationalAIbot.json';
+import heroImage from '../../../public/conversationalAIbot.json';
 import { LottieAnimation } from '../LottieAnimations';
 
 export const Hero: FC = () => {

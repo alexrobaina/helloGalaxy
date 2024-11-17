@@ -1,8 +1,8 @@
 'use client';
 import { PainPoint } from './PainPoint';
-import slowResponseIcon from '../../assets/lottie/AI-search.json';
-import turtleIcon from '../../assets/lottie/pond-turtle.json';
-import missedOpportunitiesIcon from '../../assets/lottie/laptop.json';
+import slowResponseIcon from '../../../public/AI-search.json';
+import turtleIcon from '../../../public/pond-turtle.json';
+import missedOpportunitiesIcon from '../../../public/laptop.json';
 
 export const PainPointsBlock: React.FC = () => {
   return (
