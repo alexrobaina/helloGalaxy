@@ -1,5 +1,3 @@
-'use client';
-
 import { CallToAction } from '@/components/CallToAction';
 import { FeatureHighlight } from '@/components/FeatureHighlight';
 import { Hero } from '@/components/Hero';
@@ -11,7 +9,7 @@ import { SolutionShowcase } from '@/components/SolutionShowcase';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
 
       <PainPointsBlock />
@@ -27,6 +25,6 @@ export default function Home() {
       <Pricing />
 
       <CallToAction />
-    </main>
+    </>
   );
 }

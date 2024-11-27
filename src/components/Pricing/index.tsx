@@ -1,3 +1,5 @@
+'use client';
+
 import { PlanCard } from './PlanCard';
 
 export const Pricing: React.FC = () => {

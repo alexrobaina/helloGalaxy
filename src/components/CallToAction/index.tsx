@@ -1,3 +1,4 @@
+'use client';
 export const CallToAction: React.FC = () => {
   return (
     <footer className="hidden md:block fixed bottom-0 w-full bg-indigo-600 text-white py-4 px-6 shadow-md z-50">
