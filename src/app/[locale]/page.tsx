@@ -11,7 +11,7 @@ import { SolutionShowcase } from '@/components/SolutionShowcase';
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
 
       <PainPointsBlock />
@@ -27,6 +27,6 @@ export default function Home() {
       <Pricing />
 
       <CallToAction />
-    </>
+    </main>
   );
 }
