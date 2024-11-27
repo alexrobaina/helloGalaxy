@@ -8,7 +8,7 @@ interface RootLayoutProps {
   params: Promise<{ locale: string }>;
 }
 
-export async function generateMetadata({ params }: RootLayoutProps) {
+export async function generateMetadata() {
   const messages = await getMessages();
 
   // Define metadata based on locale
