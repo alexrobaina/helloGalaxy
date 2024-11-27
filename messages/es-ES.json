@@ -1,0 +1,16 @@
+{
+  "Hero": {
+    "title": "Transforma tu negocio con automatización inteligente",
+    "description": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hellow Gallaxy.",
+    "startButton": "Comienza tu transformación",
+    "exploreButton": "Explora soluciones"
+  },
+  "metadata": {
+    "title": "Hello Galaxy",
+    "description": "Transforma tu negocio con automatización inteligente",
+    "keywords": "AI, automatización, negocio, eficiencia, crecimiento, typescript, Node.js, Next.js",
+    "ogTitle": "Transforma tu negocio con automatización inteligente",
+    "ogDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy.",
+    "twitterDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy."
+  }
+}

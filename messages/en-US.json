@@ -1,0 +1,16 @@
+{
+  "Hero": {
+    "title": "Transform Your Business with Intelligent Automation",
+    "description": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hellow Gallaxy.",
+    "startButton": "Start Your Transformation",
+    "exploreButton": "Explore Solutions"
+  },
+  "metadata": {
+    "title": "Hello Galaxy",
+    "description": "Transform Your Business with Intelligent Automation",
+    "keywords": "AI, automation, business, efficiency, growth, typescript, Node.js, Next.js",
+    "ogTitle": "Transform Your Business with Intelligent Automation",
+    "ogDescription": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hello Galaxy.",
+    "twitterDescription": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hello Galaxy."
+  }
+}

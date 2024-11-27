@@ -1,20 +1,36 @@
-// components/LanguageSwitcher.tsx
-import { useRouter } from 'next/router';
+// app/[locale]/language-switcher.tsx
+'use client';
 
-const LanguageSwitcher = () => {
+import { usePathname, useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
+
+export default function LanguageSwitcher() {
   const router = useRouter();
+  const locale = useLocale();
+  const pathname = usePathname();
 
-  const changeLanguage = (locale: string) => {
-    router.push(router.pathname, router.asPath, { locale });
+  const redirectToLocale = (newLocale: string) => {
+    const segments = pathname.split('/');
+    segments[1] = newLocale;
+    router.push(segments.join('/'));
   };
 
   return (
-    <div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('es')}>Español</button>
-      <button onClick={() => changeLanguage('fr')}>Français</button>
+    <div className="fixed right-0 top-0 m-4 flex gap-2">
+      <button
+        onClick={() => redirectToLocale('en-US')}
+        disabled={locale === 'en-US'}
+        className="bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-700 disabled:opacity-50"
+      >
+        English
+      </button>
+      <button
+        onClick={() => redirectToLocale('es-ES')}
+        disabled={locale === 'es-ES'}
+        className="bg-indigo-500 text-white py-2 px-4 rounded hover:bg-indigo-700 disabled:opacity-50"
+      >
+        Español
+      </button>
     </div>
   );
-};
-
-export default LanguageSwitcher;
+}
