@@ -1,16 +1,112 @@
 {
   "Hero": {
-    "title": "Transforma tu negocio con automatización inteligente",
-    "description": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hellow Gallaxy.",
+    "title": "Transforma tu negocio junto a la inteligencia artificial",
+    "description": "Impulsa tus operaciones con IA para mejorar la eficiencia, sorprender a los clientes y acelerar el crecimiento. Descubre el futuro de los negocios con Hello Galaxy.",
     "startButton": "Comienza tu transformación",
     "exploreButton": "Explora soluciones"
   },
+  "PainPointsBlock": {
+    "title": "Revoluciona tus operaciones empresariales",
+    "description": "Descubre cómo Hello Galaxy elimina los obstáculos comunes en los negocios y potencia tu crecimiento al máximo.",
+    "paintPoint1": {
+      "title": "Interacción instantánea con clientes",
+      "description": "No hagas esperar a tus clientes. Automatiza respuestas y ofrece soporte personalizado al instante."
+    },
+    "paintPoint2": {
+      "title": "Automatización eficaz",
+      "description": "Libera a tu equipo de tareas repetitivas y enfócate en iniciativas estratégicas que impulsan el crecimiento."
+    },
+    "paintPoint3": {
+      "title": "Aprovecha cada oportunidad",
+      "description": "No dejes pasar ninguna oportunidad. Nuestra inteligencia artificial avanzada asegura que cada oportunidad sea capturada y aprovechada."
+    }
+  },
+  "SolutionShowcase": {
+    "title": "Soluciones de IA de Nivel Empresarial",
+    "description": "Transforma tus operaciones empresariales con la avanzada tecnología de IA de Hello Galaxy, diseñada para mejorar la eficiencia y fomentar el crecimiento.",
+    "solution1": {
+      "title": "Interacción Inteligente con Clientes",
+      "description": "Mejora la experiencia del cliente con chatbots impulsados por IA que ofrecen soporte personalizado e instantáneo, impulsando conversiones las 24 horas del día, los 7 días de la semana."
+    },
+    "solution2": {
+      "title": "Automatización de Procesos Inteligente",
+      "description": "Aumenta la eficiencia operativa con automatización impulsada por IA que gestiona flujos de trabajo complejos, desde el procesamiento de documentos hasta la programación de recursos."
+    },
+    "solution3": {
+      "title": "Análisis Predictivo y Perspectivas",
+      "description": "Aprovecha el poder de tus datos con análisis avanzados que proporcionan perspectivas accionables para la toma de decisiones estratégicas y el crecimiento."
+    }
+  },
+  "FeatureHighlight": {
+    "title": "Por qué las empresas líderes eligen Hello Galaxy",
+    "description": "Descubre cómo nuestra plataforma de IA empresarial ofrece un valor sin precedentes a través de innovación, fiabilidad y resultados.",
+    "feature1": {
+      "title": "Escalabilidad de Nivel Empresarial",
+      "description": "Soluciones flexibles que se adaptan a tus necesidades, desde equipos pequeños hasta operaciones globales."
+    },
+    "feature2": {
+      "title": "Integración sin problemas",
+      "description": "Compatibilidad nativa con herramientas y plataformas líderes en el mercado para una implementación inmediata."
+    },
+    "feature3": {
+      "title": "Análisis Avanzado",
+      "description": "Perspectivas en tiempo real y análisis predictivos para impulsar la toma de decisiones estratégicas."
+    },
+    "feature4": {
+      "title": "AI Mind",
+      "description": "Desbloquea el poder de la IA con nuestros servicios de entrenamiento y desarrollo de IA avanzados."
+    }
+  },
+  "Pricing": {
+    "title": "Planes flexibles para un crecimiento sostenible",
+    "description": "Selecciona el plan perfecto para potenciar tu negocio con capacidades de IA empresarial.",
+    "plan1": {
+      "title": "Plan Esencial",
+      "description": "Optimiza operaciones con herramientas de automatización de IA esenciales.",
+      "price": "$140",
+      "features": {
+        "1": "Asistente de IA inteligente",
+        "2": "Entrenamiento de IA personalizado",
+        "3": "1,000 Interacciones mensuales",
+        "4": "Soporte de correo electrónico prioritario",
+        "5": "Integración con herramientas de negocio"
+      }
+    },
+    "plan2": {
+      "title": "Plan Profesional",
+      "description": "Amplía capacidades para negocios y equipos en crecimiento.",
+      "price": "$190",
+      "features": {
+        "1": "Asistente de IA avanzado",
+        "2": "Entrenamiento de IA extendido",
+        "3": "3,000 Interacciones mensuales",
+        "4": "Suite de automatización premium",
+        "5": "Soporte y capacitación prioritarios"
+      }
+    },
+    "plan3": {
+      "title": "Plan Personalizado",
+      "description": "Soluciones personalizadas para necesidades empresariales únicas.",
+      "price": "Personalizado",
+      "features": {
+        "1": "Soluciones de IA personalizadas",
+        "2": "Entrenamiento de IA ilimitado",
+        "3": "Interacciones ilimitadas",
+        "4": "Suite de automatización empresarial",
+        "5": "Soluciones de integración personalizadas"
+      }
+    }
+  },
   "metadata": {
     "title": "Hello Galaxy",
-    "description": "Transforma tu negocio con automatización inteligente",
+    "description": "Transforma tu negocio junto a la inteligencia artificial",
     "keywords": "AI, automatización, negocio, eficiencia, crecimiento, typescript, Node.js, Next.js",
-    "ogTitle": "Transforma tu negocio con automatización inteligente",
+    "ogTitle": "Transforma tu negocio junto a la inteligencia artificial",
     "ogDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy.",
     "twitterDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy."
+  },
+  "InteractiveDemo": {
+    "title": "Descubre Hello Galaxy en Acción",
+    "description": "Observa cómo nuestra plataforma de IA empresarial transforma las operaciones de negocio, automatiza flujos de trabajo complejos y ofrece resultados medibles."
   }
 }

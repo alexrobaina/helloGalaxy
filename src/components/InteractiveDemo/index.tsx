@@ -1,18 +1,16 @@
 'use client';
+import { useTranslations } from 'next-intl';
 
 export const InteractiveDemo: React.FC = () => {
+  const t = useTranslations('InteractiveDemo');
+
   return (
     <section className="bg-white py-20 px-6 md:px-12">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Experience Hello Galaxy in Action
-          </h2>
-          <p className="text-lg text-gray-600 mt-4">
-            See how our enterprise AI platform transforms business operations, automates complex
-            workflows, and delivers measurable results.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t('title')}</h2>
+          <p className="text-lg text-gray-600 mt-4">{t('description')}</p>
         </div>
 
         {/* Video or Interactive Content */}

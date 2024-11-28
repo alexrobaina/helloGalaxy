@@ -4,20 +4,18 @@ import { LottieAnimation } from '../LottieAnimations';
 import customerAttractionIcon from '../../../public/customerAttraction.json';
 import businessAnalytics from '../../../public/businessAnalytics.json';
 import dataManagement from '../../../public/dataManagement.json';
+import { useTranslations } from 'next-intl';
 
 export const SolutionShowcase: React.FC = () => {
+  const t = useTranslations('SolutionShowcase');
+
   return (
     <section className="bg-white py-20 px-6 md:px-12">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Enterprise-Grade AI Solutions
-          </h2>
-          <p className="text-lg text-gray-600 mt-4">
-            Transform your business operations with Hello Galaxy advanced AI technology, designed to
-            enhance efficiency and drive growth.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t('title')}</h2>
+          <p className="text-lg text-gray-600 mt-4">{t('description')}</p>
         </div>
 
         {/* Solutions Grid */}
@@ -27,11 +25,8 @@ export const SolutionShowcase: React.FC = () => {
             <div className="h-[150px]">
               <LottieAnimation width={150} animation={customerAttractionIcon} />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800">Intelligent Customer Engagement</h3>
-            <p className="text-gray-600 mt-2">
-              Elevate customer experience with AI-powered chatbots that provide instant,
-              personalized support and drive conversions 24/7.
-            </p>
+            <h3 className="text-xl font-semibold text-gray-800">{t('solution1.title')}</h3>
+            <p className="text-gray-600 mt-2">{t('solution1.description')}</p>
           </div>
 
           {/* Solution 2 */}
@@ -39,11 +34,8 @@ export const SolutionShowcase: React.FC = () => {
             <div className="h-[150px]">
               <LottieAnimation width={190} animation={businessAnalytics} />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800">Smart Process Automation</h3>
-            <p className="text-gray-600 mt-2">
-              Boost operational efficiency with AI-driven automation that handles complex workflows,
-              from document processing to resource scheduling.
-            </p>
+            <h3 className="text-xl font-semibold text-gray-800">{t('solution2.title')}</h3>
+            <p className="text-gray-600 mt-2">{t('solution2.description')}</p>
           </div>
 
           {/* Solution 3 */}
@@ -51,11 +43,8 @@ export const SolutionShowcase: React.FC = () => {
             <div className="h-[150px]">
               <LottieAnimation width={250} animation={dataManagement} />
             </div>
-            <h3 className="text-xl font-semibold text-gray-800">Predictive Analytics & Insights</h3>
-            <p className="text-gray-600 mt-2">
-              Harness the power of your data with advanced analytics that deliver actionable
-              insights for strategic decision-making and growth.
-            </p>
+            <h3 className="text-xl font-semibold text-gray-800">{t('solution3.title')}</h3>
+            <p className="text-gray-600 mt-2">{t('solution3.description')}</p>
           </div>
         </div>
       </div>

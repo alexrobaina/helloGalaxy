@@ -1,16 +1,113 @@
 {
   "Hero": {
-    "title": "Transform Your Business with Intelligent Automation",
-    "description": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hellow Gallaxy.",
+    "title": "Transform Your Business with Cutting-Edge AI Solutions",
+    "description": "Elevate your operations with state-of-the-art AI solutions that boost efficiency, captivate customers, and drive rapid growth. Embrace the future of business with Hello Galaxy.",
     "startButton": "Start Your Transformation",
     "exploreButton": "Explore Solutions"
   },
+  "PainPointsBlock": {
+    "title": "Transform Your Business Operations",
+    "description": "See how Hello Gallaxy eliminates common business challenges and accelerates your growth potential.",
+    "paintPoint1": {
+      "title": "Instant Customer Engagement",
+      "description": "Don't keep customers waiting. Automate responses and deliver immediate, personalized support."
+    },
+    "paintPoint2": {
+      "title": "Automation That Works",
+      "description": "Free your team from repetitive tasks and focus on strategic initiatives that drive growth."
+    },
+    "paintPoint3": {
+      "title": "Capture Every Opportunity",
+      "description": "Never miss a lead again. Our smart tracking ensures every opportunity is captured and pursued."
+    }
+  },
+  "SolutionShowcase": {
+    "title": "Enterprise-Grade AI Solutions",
+    "description": "Transform your business operations with Hello Galaxy advanced AI technology, designed to enhance efficiency and drive growth.",
+    "solution1": {
+      "title": "Intelligent Customer Engagement",
+      "description": "Elevate customer experience with AI-powered chatbots that provide instant, personalized support and drive conversions 24/7."
+    },
+    "solution2": {
+      "title": "Smart Process Automation",
+      "description": "Boost operational efficiency with AI-driven automation that handles complex workflows, from document processing to resource scheduling."
+    },
+    "solution3": {
+      "title": "Predictive Analytics & Insights",
+      "description": "Harness the power of your data with advanced analytics that deliver actionable insights for strategic decision-making and growth."
+    }
+  },
+  "InteractiveDemo": {
+    "title": "Experience Hello Galaxy in Action",
+    "description": "See how our enterprise AI platform transforms business operations, automates complex workflows, and delivers measurable results."
+  },
+  "FeatureHighlight": {
+    "title": "Why Leading Businesses Choose Hello Galaxy",
+    "description": "Discover how our enterprise AI platform delivers unmatched value through innovation, reliability, and results.",
+    "feature1": {
+      "title": "Enterprise-Grade Scalability",
+      "description": "Flexible solutions that adapt to your needs, from small teams to global operations."
+    },
+    "feature2": {
+      "title": "Seamless Integration",
+      "description": "Native compatibility with leading enterprise tools and platforms for immediate deployment."
+    },
+    "feature3": {
+      "title": "Advanced Analytics",
+      "description": "Real-time insights and predictive analytics to drive strategic decision-making."
+    },
+    "feature4": {
+      "title": "AI Mind",
+      "description": "Unlock the power of AI with our advanced AI training and development services."
+    }
+  },
+  "Pricing": {
+    "title": "Flexible Plans for Sustainable Growth",
+    "description": "Select the perfect plan to power your business with enterprise AI capabilities.",
+    "plan1": {
+      "title": "Essential Plan",
+      "description": "Streamline operations with powerful AI automation essentials.",
+      "price": "$140",
+      "features": {
+        "1": "Intelligent AI Assistant",
+        "2": "Custom AI Training",
+        "3": "1,000 Monthly Interactions",
+        "4": "Priority Email Suppor ",
+        "5": "Business Tools Integration"
+      }
+    },
+    "plan2": {
+      "title": "Professional Plan",
+      "description": "Enhanced capabilities for scaling businesses and teams.",
+      "price": "$190",
+      "features": {
+        "1": "Advanced AI Assistant",
+        "2": "Extended AI Training",
+        "3": "3,000 Monthly Interactions",
+        "4": "Premium Automation Suite",
+        "5": "Priority Support & Training"
+      }
+    },
+    "plan3": {
+      "title": "Custom Plan",
+      "description": "Tailored solutions for unique business needs.",
+      "price": "Custom",
+      "features": {
+        "1": "Custom AI Solutions",
+        "2": "Unlimited AI Training",
+        "3": "Unlimited Interactions",
+        "4": "Enterprise Automation Suite",
+        "5": "Dedicated Success Manager"
+      }
+    }
+  },
+
   "metadata": {
     "title": "Hello Galaxy",
-    "description": "Transform Your Business with Intelligent Automation",
+    "description": "Transform Your Business with Artificial Intelligence",
     "keywords": "AI, automation, business, efficiency, growth, typescript, Node.js, Next.js",
-    "ogTitle": "Transform Your Business with Intelligent Automation",
-    "ogDescription": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hello Galaxy.",
-    "twitterDescription": "Elevate your operations with AI-powered solutions that boost efficiency, delight customers, and accelerate growth. Experience the future of business with Hello Galaxy."
+    "ogTitle": "Transform Your Business with Artificial Intelligence",
+    "ogDescription": "Elevate your operations with state-of-the-art AI solutions that boost efficiency, captivate customers, and drive rapid growth. Embrace the future of business with Hello Galaxy.",
+    "twitterDescription": "Elevate your operations with state-of-the-art AI solutions that boost efficiency, captivate customers, and drive rapid growth. Embrace the future of business with Hello Galaxy."
   }
 }
