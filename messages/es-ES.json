@@ -37,6 +37,10 @@
       "description": "Aprovecha el poder de tus datos con análisis avanzados que proporcionan perspectivas accionables para la toma de decisiones estratégicas y el crecimiento."
     }
   },
+  "InteractiveDemo": {
+    "title": "Descubre Hello Galaxy en Acción",
+    "description": "Observa cómo nuestra plataforma de IA empresarial transforma las operaciones de negocio, automatiza flujos de trabajo complejos y ofrece resultados medibles."
+  },
   "FeatureHighlight": {
     "title": "Por qué las empresas líderes eligen Hello Galaxy",
     "description": "Descubre cómo nuestra plataforma de IA empresarial ofrece un valor sin precedentes a través de innovación, fiabilidad y resultados.",
@@ -97,6 +101,12 @@
       }
     }
   },
+  "CallToAction": {
+    "title": "¿Listo para revolucionar tu negocio?",
+    "description": "Únete a la lista de negocios que transforman con IA.",
+    "startButton": "Comienza tu transformación",
+    "contactButton": "Contactanos"
+  },
   "metadata": {
     "title": "Hello Galaxy",
     "description": "Transforma tu negocio junto a la inteligencia artificial",
@@ -104,9 +114,5 @@
     "ogTitle": "Transforma tu negocio junto a la inteligencia artificial",
     "ogDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy.",
     "twitterDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy."
-  },
-  "InteractiveDemo": {
-    "title": "Descubre Hello Galaxy en Acción",
-    "description": "Observa cómo nuestra plataforma de IA empresarial transforma las operaciones de negocio, automatiza flujos de trabajo complejos y ofrece resultados medibles."
   }
 }

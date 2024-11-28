@@ -101,7 +101,12 @@
       }
     }
   },
-
+  "CallToAction": {
+    "title": "Ready to Revolutionize Your Business?",
+    "description": "Join the growing list of businesses transforming with AI.",
+    "startButton": "Get Started",
+    "contactButton": "Contact Us"
+  },
   "metadata": {
     "title": "Hello Galaxy",
     "description": "Transform Your Business with Artificial Intelligence",
