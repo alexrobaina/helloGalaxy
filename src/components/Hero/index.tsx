@@ -32,13 +32,13 @@ export const Hero: FC = () => {
           <p className="text-lg md:text-xl mb-6 text-gray-600">{t('description')}</p>
           <div className="flex flex-col md:flex-row gap-4">
             <a
-              href="#get-started"
+              href="#pricing"
               className="bg-indigo-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-indigo-600 transition"
             >
               {t('startButton')}
             </a>
             <a
-              href="#learn-more"
+              href="#pain-points"
               className="bg-gray-100 border-2 border-gray-300 px-6 py-3 rounded-lg text-lg font-semibold text-gray-700 hover:bg-gray-200 transition"
             >
               {t('exploreButton')}

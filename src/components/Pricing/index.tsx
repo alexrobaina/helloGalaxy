@@ -7,7 +7,7 @@ export const Pricing: React.FC = () => {
   const t = useTranslations('Pricing');
 
   return (
-    <section className="bg-white py-20 pb-60 px-6 md:px-12">
+    <section id="pricing" className="bg-white py-20 pb-60 px-6 md:px-12">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -19,10 +19,10 @@ export const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Plan 1 */}
           <PlanCard
-            price="$140"
+            price="$250"
             title={t('plan1.title')}
             buttonText="Contact Us"
-            buttonLink="#contact-us"
+            buttonLink="https://wa.me/5491138997032"
             description={t('plan1.description')}
             features={[
               t('plan1.features.1'),
@@ -34,10 +34,10 @@ export const Pricing: React.FC = () => {
 
           {/* Plan 2 */}
           <PlanCard
-            price="$190"
+            price="$399"
             title={t('plan2.title')}
             buttonText="Contact Us"
-            buttonLink="#contact-us"
+            buttonLink="https://wa.me/5491138997032"
             description={t('plan2.description')}
             features={[
               t('plan2.features.1'),
@@ -52,7 +52,7 @@ export const Pricing: React.FC = () => {
             price="Custom"
             title={t('plan3.title')}
             buttonText="Contact Us"
-            buttonLink="#contact-us"
+            buttonLink="https://wa.me/5491138997032"
             description={t('plan3.description')}
             features={[
               t('plan3.features.1'),
