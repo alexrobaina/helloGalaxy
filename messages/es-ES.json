@@ -1,118 +1,115 @@
 {
   "Hero": {
-    "title": "Transforma tu negocio junto a la inteligencia artificial",
-    "description": "Impulsa tus operaciones con IA para mejorar la eficiencia, sorprender a los clientes y acelerar el crecimiento. Descubre el futuro de los negocios con Hello Galaxy.",
-    "startButton": "Comienza tu transformación",
-    "exploreButton": "Explora soluciones"
+    "title": "Simplifica la atención al cliente con IA y WhatsApp",
+    "description": "Transforma cómo interactúas con tus clientes integrando herramientas inteligentes que optimizan tu negocio y potencian tus resultados. Lleva tu negocio al siguiente nivel con Hello Galaxy.",
+    "startButton": "Empieza ahora",
+    "exploreButton": "Conoce más"
   },
   "PainPointsBlock": {
-    "title": "Revoluciona tus operaciones empresariales",
-    "description": "Descubre cómo Hello Galaxy elimina los obstáculos comunes en los negocios y potencia tu crecimiento al máximo.",
+    "title": "Resuelve los desafíos de atención al cliente",
+    "description": "Hello Galaxy ofrece soluciones diseñadas para superar los retos más comunes en la interacción con clientes.",
     "paintPoint1": {
-      "title": "Interacción instantánea con clientes",
-      "description": "No hagas esperar a tus clientes. Automatiza respuestas y ofrece soporte personalizado al instante."
+      "title": "Respuestas rápidas y personalizadas",
+      "description": "Atiende a tus clientes al instante, ofreciendo información precisa y soporte eficiente en todo momento."
     },
     "paintPoint2": {
-      "title": "Automatización eficaz",
-      "description": "Libera a tu equipo de tareas repetitivas y enfócate en iniciativas estratégicas que impulsan el crecimiento."
+      "title": "Optimización del tiempo",
+      "description": "Automatiza tareas repetitivas y dedica más tiempo a estrategias que impulsen el crecimiento de tu negocio."
     },
     "paintPoint3": {
-      "title": "Aprovecha cada oportunidad",
-      "description": "No dejes pasar ninguna oportunidad. Nuestra inteligencia artificial avanzada asegura que cada oportunidad sea capturada y aprovechada."
+      "title": "Integración sin complicaciones",
+      "description": "Conecta WhatsApp, Google Sheets y Chatwoot para gestionar conversaciones, almacenar datos y mejorar la experiencia del cliente."
     }
   },
   "SolutionShowcase": {
-    "title": "Soluciones de IA de Nivel Empresarial",
-    "description": "Transforma tus operaciones empresariales con la avanzada tecnología de IA de Hello Galaxy, diseñada para mejorar la eficiencia y fomentar el crecimiento.",
+    "title": "Soluciones simples y eficaces",
+    "description": "Hello Galaxy integra tecnología avanzada en una plataforma fácil de usar, adaptada a las necesidades de cada cliente.",
     "solution1": {
-      "title": "Interacción Inteligente con Clientes",
-      "description": "Mejora la experiencia del cliente con chatbots impulsados por IA que ofrecen soporte personalizado e instantáneo, impulsando conversiones las 24 horas del día, los 7 días de la semana."
+      "title": "Chatbots inteligentes",
+      "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
     },
     "solution2": {
-      "title": "Automatización de Procesos Inteligente",
-      "description": "Aumenta la eficiencia operativa con automatización impulsada por IA que gestiona flujos de trabajo complejos, desde el procesamiento de documentos hasta la programación de recursos."
+      "title": "Almacenamiento y análisis de datos",
+      "description": "Registra y organiza las conversaciones en Google Sheets para obtener información valiosa que optimice tus estrategias."
     },
     "solution3": {
-      "title": "Análisis Predictivo y Perspectivas",
-      "description": "Aprovecha el poder de tus datos con análisis avanzados que proporcionan perspectivas accionables para la toma de decisiones estratégicas y el crecimiento."
+      "title": "Flujos personalizados",
+      "description": "Crea flujos de conversación únicos que guíen a tus clientes hacia soluciones rápidas y efectivas."
     }
   },
   "InteractiveDemo": {
-    "title": "Descubre Hello Galaxy en Acción",
-    "description": "Observa cómo nuestra plataforma de IA empresarial transforma las operaciones de negocio, automatiza flujos de trabajo complejos y ofrece resultados medibles."
+    "title": "Prueba Hello Galaxy",
+    "description": "Descubre cómo nuestra tecnología simplifica la atención al cliente y mejora la eficiencia de tu equipo."
   },
   "FeatureHighlight": {
-    "title": "Por qué las empresas líderes eligen Hello Galaxy",
-    "description": "Descubre cómo nuestra plataforma de IA empresarial ofrece un valor sin precedentes a través de innovación, fiabilidad y resultados.",
+    "title": "Por qué elegir Hello Galaxy",
+    "description": "Nuestras soluciones destacan por su simplicidad, eficacia y adaptabilidad.",
     "feature1": {
-      "title": "Escalabilidad de Nivel Empresarial",
-      "description": "Soluciones flexibles que se adaptan a tus necesidades, desde equipos pequeños hasta operaciones globales."
+      "title": "Personalización total",
+      "description": "Configura el chatbot para atender a las necesidades específicas de tu negocio."
     },
     "feature2": {
-      "title": "Integración sin problemas",
-      "description": "Compatibilidad nativa con herramientas y plataformas líderes en el mercado para una implementación inmediata."
+      "title": "Precios claros y flexibles",
+      "description": "Elige un plan que se ajuste al tamaño y las necesidades de tu operación."
     },
     "feature3": {
-      "title": "Análisis Avanzado",
-      "description": "Perspectivas en tiempo real y análisis predictivos para impulsar la toma de decisiones estratégicas."
+      "title": "Escalabilidad garantizada",
+      "description": "Cubre desde 1,000 hasta 100,000 conversaciones al mes, adaptándote al crecimiento de tu negocio."
     },
     "feature4": {
-      "title": "AI Mind",
-      "description": "Desbloquea el poder de la IA con nuestros servicios de entrenamiento y desarrollo de IA avanzados."
+      "title": "Integración completa",
+      "description": "Conecta fácilmente con Meta, Google Sheets y Chatwoot para optimizar cada interacción."
     }
   },
   "Pricing": {
-    "title": "Planes flexibles para un crecimiento sostenible",
-    "description": "Selecciona el plan perfecto para potenciar tu negocio con capacidades de IA empresarial.",
+    "title": "Planes accesibles y adaptables",
+    "description": "Nuestros planes están diseñados para ajustarse a empresas de todos los tamaños.",
     "plan1": {
-      "title": "Plan Esencial",
-      "description": "Optimiza operaciones con herramientas de automatización de IA esenciales.",
+      "title": "Plan Básico",
+      "description": "Ideal para pequeños negocios que inician con la atención automatizada.",
       "price": "$140",
       "features": {
-        "1": "Asistente de IA inteligente",
-        "2": "Entrenamiento de IA personalizado",
-        "3": "1,000 Interacciones mensuales",
-        "4": "Soporte de correo electrónico prioritario",
-        "5": "Integración con herramientas de negocio"
+        "1": "1,000 conversaciones mensuales",
+        "2": "Chatbot personalizable",
+        "3": "Integración con Google Sheets",
+        "4": "Soporte técnico básico"
       }
     },
     "plan2": {
-      "title": "Plan Profesional",
-      "description": "Amplía capacidades para negocios y equipos en crecimiento.",
+      "title": "Plan Avanzado",
+      "description": "Perfecto para empresas en crecimiento.",
       "price": "$190",
       "features": {
-        "1": "Asistente de IA avanzado",
-        "2": "Entrenamiento de IA extendido",
-        "3": "3,000 Interacciones mensuales",
-        "4": "Suite de automatización premium",
-        "5": "Soporte y capacitación prioritarios"
+        "1": "3,000 conversaciones mensuales",
+        "2": "Chatbot avanzado con IA",
+        "3": "Flujos personalizados",
+        "4": "Integración con Chatwoot"
       }
     },
     "plan3": {
       "title": "Plan Personalizado",
-      "description": "Soluciones personalizadas para necesidades empresariales únicas.",
-      "price": "Personalizado",
+      "description": "Soluciones adaptadas a empresas con necesidades específicas.",
+      "price": "A medida",
       "features": {
-        "1": "Soluciones de IA personalizadas",
-        "2": "Entrenamiento de IA ilimitado",
-        "3": "Interacciones ilimitadas",
-        "4": "Suite de automatización empresarial",
-        "5": "Soluciones de integración personalizadas"
+        "1": "Interacciones ilimitadas",
+        "2": "Automatización avanzada",
+        "3": "Soporte prioritario",
+        "4": "Integración personalizada"
       }
     }
   },
   "CallToAction": {
-    "title": "¿Listo para revolucionar tu negocio?",
-    "description": "Únete a la lista de negocios que transforman con IA.",
-    "startButton": "Comienza tu transformación",
-    "contactButton": "Contactanos"
+    "title": "¿Listo para simplificar la atención al cliente?",
+    "description": "Empieza hoy mismo y transforma cómo gestionas tu negocio.",
+    "startButton": "Contratar ahora",
+    "contactButton": "Habla con nosotros"
   },
   "metadata": {
-    "title": "Hello Galaxy",
-    "description": "Transforma tu negocio junto a la inteligencia artificial",
-    "keywords": "AI, automatización, negocio, eficiencia, crecimiento, typescript, Node.js, Next.js",
-    "ogTitle": "Transforma tu negocio junto a la inteligencia artificial",
-    "ogDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy.",
-    "twitterDescription": "Eleva tus operaciones con soluciones impulsadas por IA que aumentan la eficiencia, deleitan a los clientes y aceleran el crecimiento. Experimenta el futuro de los negocios con Hello Galaxy."
+    "title": "Hello Galaxy: Atención al Cliente Inteligente",
+    "description": "Simplifica y optimiza la atención al cliente con IA y WhatsApp.",
+    "keywords": "IA, WhatsApp, automatización, atención al cliente, Google Sheets, Chatwoot",
+    "ogTitle": "Hello Galaxy: Atención al Cliente Inteligente",
+    "ogDescription": "Mejora la eficiencia y potencia el crecimiento de tu negocio con nuestras soluciones integradas.",
+    "twitterDescription": "Simplifica y optimiza la atención al cliente con IA y WhatsApp."
   }
 }

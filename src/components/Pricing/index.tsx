@@ -29,7 +29,6 @@ export const Pricing: React.FC = () => {
               t('plan1.features.2'),
               t('plan1.features.3'),
               t('plan1.features.4'),
-              t('plan1.features.5'),
             ]}
           />
 
@@ -45,7 +44,6 @@ export const Pricing: React.FC = () => {
               t('plan2.features.2'),
               t('plan2.features.3'),
               t('plan2.features.4'),
-              t('plan2.features.5'),
             ]}
           />
 
@@ -61,7 +59,6 @@ export const Pricing: React.FC = () => {
               t('plan3.features.2'),
               t('plan3.features.3'),
               t('plan3.features.4'),
-              t('plan3.features.5'),
             ]}
           />
         </div>
