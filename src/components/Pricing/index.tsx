@@ -19,9 +19,9 @@ export const Pricing: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Plan 1 */}
           <PlanCard
-            price="$250"
+            price={t('plan1.price')}
             title={t('plan1.title')}
-            buttonText="Contact Us"
+            buttonText={t('buttonText')}
             buttonLink="https://wa.me/5491138997032"
             description={t('plan1.description')}
             features={[
@@ -34,9 +34,9 @@ export const Pricing: React.FC = () => {
 
           {/* Plan 2 */}
           <PlanCard
-            price="$399"
+            price={t('plan2.price')}
             title={t('plan2.title')}
-            buttonText="Contact Us"
+            buttonText={t('buttonText')}
             buttonLink="https://wa.me/5491138997032"
             description={t('plan2.description')}
             features={[
@@ -51,7 +51,7 @@ export const Pricing: React.FC = () => {
           <PlanCard
             price="Custom"
             title={t('plan3.title')}
-            buttonText="Contact Us"
+            buttonText={t('buttonText')}
             buttonLink="https://wa.me/5491138997032"
             description={t('plan3.description')}
             features={[

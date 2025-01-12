@@ -64,10 +64,11 @@
   "Pricing": {
     "title": "Planes accesibles y adaptables",
     "description": "Nuestros planes están diseñados para ajustarse a empresas de todos los tamaños.",
+    "buttonText": "Contactanos",
     "plan1": {
       "title": "Plan Básico",
       "description": "Ideal para pequeños negocios que inician con la atención automatizada.",
-      "price": "$140",
+      "price": "$250 USD",
       "features": {
         "1": "1,000 conversaciones mensuales",
         "2": "Chatbot personalizable",
@@ -78,7 +79,7 @@
     "plan2": {
       "title": "Plan Avanzado",
       "description": "Perfecto para empresas en crecimiento.",
-      "price": "$190",
+      "price": "$399 USD",
       "features": {
         "1": "3,000 conversaciones mensuales",
         "2": "Chatbot avanzado con IA",

@@ -64,10 +64,11 @@
   "Pricing": {
     "title": "Affordable and Adaptable Plans",
     "description": "Our plans are designed to suit businesses of all sizes.",
+    "buttonText": "Contact Us",
     "plan1": {
       "title": "Basic Plan",
       "description": "Ideal for small businesses starting with automated customer service.",
-      "price": "$140",
+      "price": "$250 USD",
       "features": {
         "1": "1,000 monthly conversations",
         "2": "Customizable chatbot",
@@ -78,7 +79,7 @@
     "plan2": {
       "title": "Advanced Plan",
       "description": "Perfect for growing businesses.",
-      "price": "$190",
+      "price": "$399 USD",
       "features": {
         "1": "3,000 monthly conversations",
         "2": "Advanced AI chatbot",
