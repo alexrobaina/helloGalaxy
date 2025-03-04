@@ -4,5 +4,9 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   // Perform any global setup or checks here
-  return <>{children}</>;
+  return (
+    <html>
+      <body>{children}</body>
+    </html>
+  );
 }

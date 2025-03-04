@@ -10,9 +10,8 @@ export const SolutionShowcase: React.FC = () => {
   const t = useTranslations('SolutionShowcase');
 
   return (
-    <section className="bg-white py-20 px-6 md:px-12">
+    <section className="py-20 px-6 md:px-12 bg-slate-950">
       <div className="container mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t('title')}</h2>
           <p className="text-lg text-gray-600 mt-4">{t('description')}</p>
