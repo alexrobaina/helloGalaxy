@@ -7,13 +7,15 @@ import { Pricing } from '@/components/Pricing';
 import { SocialProof } from '@/components/SocialProof';
 import { SolutionShowcase } from '@/components/SolutionShowcase';
 import { TerminalAI } from '@/components/TerminalAI';
-
+import { WorkExperience } from '@/components/WorkExperience';
 export default function Home() {
   return (
     <>
       <Hero />
 
       <TerminalAI />
+
+      <WorkExperience />
       {/* <PainPointsBlock /> */}
 
       <SolutionShowcase />

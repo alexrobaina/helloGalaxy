@@ -8,7 +8,7 @@ export const TerminalAI: React.FC = () => {
   return (
     <section
       id="pain-points"
-      className="py-20 px-6 md:px-12 bg-gradient-to-b from-gray-950 to-slate-950"
+      className="py-20 px-6 md:px-12 bg-gradient-to-b from-gray-950 to-gray-950"
     >
       <div className="container mx-auto">
         <div className="text-center mb-12">

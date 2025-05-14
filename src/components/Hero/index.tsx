@@ -33,7 +33,7 @@ export const Hero: FC = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <a
               href="#pricing"
-              className="bg-indigo-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-indigo-600 transition"
+              className="bg-indigo-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-slate-600 transition"
             >
               Explore Our Solutions
             </a>

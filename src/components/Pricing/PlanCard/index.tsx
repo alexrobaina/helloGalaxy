@@ -42,7 +42,7 @@ export const PlanCard: FC<PlanCardProps> = ({
     </ul>
     <a
       href={buttonLink}
-      className="w-full bg-green-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-green-600 transition"
+      className="w-full bg-violet-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-violet-600 transition"
     >
       {buttonText}
     </a>
