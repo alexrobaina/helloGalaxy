@@ -3,8 +3,7 @@ import { LottieAnimation } from '@/components/LottieAnimations';
 import { FC } from 'react';
 
 type PainPointProps = {
-  // @ts-ignore
-  lottieIcon: unknown;
+  lottieIcon: object;
   title: string;
   description: string;
   lottieWidth: number;

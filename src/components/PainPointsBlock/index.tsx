@@ -9,11 +9,10 @@ export const PainPointsBlock: React.FC = () => {
   const t = useTranslations('PainPointsBlock');
 
   return (
-    <section id="pain-points" className="bg-gray-50 py-20 px-6 md:px-12">
+    <section id="pain-points" className="py-20 px-6 md:px-12 bg-violet-950">
       <div className="container mx-auto">
-        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">{t('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white">{t('title')}</h2>
           <p className="text-lg text-gray-600 mt-4">{t('description')}</p>
         </div>
 

@@ -2,14 +2,14 @@ import React from 'react';
 
 export const SocialProof: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-20 px-6 md:px-12">
+    <section className="py-20 px-6 md:px-12 bg-violet-950 overflow-hidden">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-100">
             Trusted by Businesses Like Yours
           </h2>
-          <p className="text-lg text-gray-600 mt-4">
+          <p className="text-lg text-gray-100 mt-4">
             See how Hellow Gallaxy is making an impact with real businesses.
           </p>
         </div>
@@ -18,7 +18,7 @@ export const SocialProof: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Testimonial 1 */}
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <p className="text-gray-600 italic">
+            <p className="text-gray-100 italic">
               {`With Hellow Gallaxy's automation tools, we reduced customer
               response times by 50%. Our team is now free to focus on more
               strategic tasks.`}

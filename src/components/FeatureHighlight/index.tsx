@@ -11,7 +11,7 @@ export const FeatureHighlight: React.FC = () => {
   const t = useTranslations('FeatureHighlight');
 
   return (
-    <section className="bg-gray-50 py-20 px-6 md:px-12">
+    <section className="py-20 px-6 md:px-12">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
