@@ -12,7 +12,7 @@ interface ExperienceItem {
   title: string;
   company_name: string;
   date: string;
-  icon: string;
+  icon: object;
   points: string[];
 }
 
@@ -22,7 +22,7 @@ const ExperienceCard: FC<{ experience: ExperienceItem }> = ({ experience }) => {
       contentStyle={{
         background: 'rgba(0, 0, 0, 0.7)',
         color: '#fff',
-        border: '2px solid cyan-700',
+        border: '2px solid #0e7490', // fixed color here!
         padding: '20px',
         borderRadius: '10px',
         boxShadow: '0 0 15px rgba(0,255,0,0.2)',

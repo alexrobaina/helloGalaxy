@@ -1,5 +1,4 @@
 import { NextResponse } from 'next/server';
-import { headers } from 'next/headers';
 
 const SYSTEM_PROMPT = `You are an AI assistant for Hello Galaxi, a software development company. 
 You specialize in providing information about our services in web development, blockchain solutions, 
@@ -7,7 +6,6 @@ and mobile app development. Keep responses concise and focused on our expertise 
 
 export async function POST(req: Request) {
   try {
-    const headersList = headers();
     const { prompt } = await req.json();
 
     if (!prompt) {

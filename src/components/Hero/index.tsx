@@ -1,13 +1,13 @@
 'use client';
 
 import React, { FC, useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import { CodeCommands } from '../CodeCommands';
 
 export const Hero: FC = () => {
-  const t = useTranslations('Hero');
+  // const t = useTranslations('Hero');
 
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {

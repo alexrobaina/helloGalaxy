@@ -1,10 +1,5 @@
 import { useState } from 'react';
 
-interface ChatGPTResponse {
-  role: string;
-  content: string;
-}
-
 export const useChatGPT = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

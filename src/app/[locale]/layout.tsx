@@ -5,6 +5,7 @@ import { ToastContainer } from 'react-toastify';
 
 import '../globals.css';
 import 'react-toastify/dist/ReactToastify.css';
+import Link from 'next/link';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -43,24 +44,24 @@ export default async function LocaleLayout({ children, params }: RootLayoutProps
         <header className="fixed justify-center p-4 items-center rounded-full z-50">
           <nav className="fixed top-0 left-0 w-full px-12 py-4 backdrop-blur-sm flex justify-center items-center gap-12">
             <div className="flex justify-center items-center gap-12 bg-violet-900 bg-opacity-50 rounded-full h-12 p-2 px-4">
-              <a
+              <Link
                 href="/"
                 className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
               >
                 About
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/contact"
                 className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </div>
             <LanguageSwitcher />
           </nav>

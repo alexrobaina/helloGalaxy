@@ -94,7 +94,7 @@ export const VintageTerminal = () => {
     clear: [],
   };
 
-  const { generateResponse, isLoading } = useChatGPT();
+  const { generateResponse } = useChatGPT();
 
   // Auto scroll to bottom when history changes
   useEffect(() => {
@@ -141,6 +141,7 @@ export const VintageTerminal = () => {
         { prompt: '🤖', command: response, isTyping: true },
       ]);
     } catch (error) {
+      console.log(error)
       setHistory(prev => [
         ...prev,
         {

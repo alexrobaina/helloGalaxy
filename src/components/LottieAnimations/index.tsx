@@ -1,15 +1,14 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 'use client';
 
-import Lottie, { LottieRefCurrentProps } from 'lottie-react';
+import Lottie, { LottieRefCurrentProps} from 'lottie-react';
 import { motion } from 'framer-motion';
 import { FC, useEffect, useRef } from 'react';
 
 interface LottieAnimationProps {
   speed?: number;
   delay?: number;
-  // @ts-ignore
-  animation: unknown;
+  animation: object;
   width?: number | string;
 }
 

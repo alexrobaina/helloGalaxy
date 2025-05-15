@@ -1,9 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import { VintageTerminal } from '../VintageTerminal';
 export const TerminalAI: React.FC = () => {
-  const t = useTranslations('TerminalAI');
+  // const t = useTranslations('TerminalAI');
 
   return (
     <section
