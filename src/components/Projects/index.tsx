@@ -5,7 +5,7 @@ import { Tilt } from 'react-tilt'
 import { motion } from 'framer-motion'
 import { fadeIn, textVariant } from '@/utils/motion'
 import { projects } from './contants'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import { BiLinkAlt } from 'react-icons/bi'
 import { BsGithub } from 'react-icons/bs'
 import { useTranslations } from 'next-intl'
@@ -40,10 +40,10 @@ export const Projects = () => {
 interface Props {
   name: string
   index: number
-  image: string
+  image: string | StaticImageData;
   appLink: string
   description: string
-  sourceCodeLink: string
+  sourceCodeLink: string | null;
   tags: { name: string; color: string }[]
 }
 

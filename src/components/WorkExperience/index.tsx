@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 import ReactLogo from '@/assets/animations/react-logo.json';
 import { LottieAnimation } from '../LottieAnimations';
-import { fadeIn } from '@/utils/motion';
 
 interface ExperienceItem {
   title: string;

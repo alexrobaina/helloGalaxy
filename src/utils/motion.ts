@@ -42,7 +42,7 @@ export const fadeIn = (
   }
 }
 
-export const zoomIn = (delay: any, duration: any) => {
+export const zoomIn = (delay: number, duration: number) => {
   return {
     hidden: {
       scale: 0,
@@ -61,7 +61,7 @@ export const zoomIn = (delay: any, duration: any) => {
   }
 }
 
-export const slideIn = (direction: string, type: any, delay: any, duration: any) => {
+export const slideIn = (direction: string, type: string, delay: number, duration: number) => {
   return {
     hidden: {
       x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
@@ -80,7 +80,7 @@ export const slideIn = (direction: string, type: any, delay: any, duration: any)
   }
 }
 
-export const staggerContainer = (staggerChildren: any, delayChildren: any) => {
+export const staggerContainer = (staggerChildren: number, delayChildren: number) => {
   return {
     hidden: {},
     show: {
