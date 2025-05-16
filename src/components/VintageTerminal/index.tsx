@@ -188,7 +188,7 @@ export const VintageTerminal = () => {
       <div
         ref={terminalRef}
         onClick={handleTerminalClick}
-        className="w-full max-w-4xl h-[500px] my-2 sm:my-8 bg-black text-violet-500 font-mono p-2 sm:p-4 border-2 border-violet-800 rounded-2xl shadow-[0_0_15px_rgba(147,51,234,0.3)] cursor-text overflow-y-auto scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-gray-900"
+        className="w-full max-w-4xl h-[500px] my-2 sm:my-8 bg-black text-violet-500  p-2 sm:p-4 border-2 border-violet-800 rounded-2xl shadow-[0_0_15px_rgba(147,51,234,0.3)] cursor-text overflow-y-auto scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-gray-900"
       >
         <div className="flex flex-col gap-1 text-left">
           {history.map((line, idx) => (
@@ -212,7 +212,7 @@ export const VintageTerminal = () => {
               value={currentInput}
               onKeyDown={handleKeyDown}
               onChange={e => setCurrentInput(e.target.value)}
-              className="bg-black text-gray-50 font-mono border-none outline-none resize-none w-full p-0 overflow-hidden"
+              className="bg-black text-gray-50  border-none outline-none resize-none w-full p-0 overflow-hidden"
             />
           </div>
         </div>

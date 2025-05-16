@@ -42,23 +42,23 @@ export default async function LocaleLayout({ children, params }: RootLayoutProps
     <html lang={locale}>
       <body className="bg-cyan-950">
         <header className="fixed justify-center p-4 items-center rounded-full z-50">
-          <nav className="fixed top-0 left-0 w-full px-12 py-4 backdrop-blur-sm flex justify-center items-center gap-12">
-            <div className="flex justify-center items-center gap-12 bg-violet-900 bg-opacity-50 rounded-full h-12 p-2 px-4">
+          <nav className="fixed top-2 left-0 w-full px-8 backdrop-blur-sm flex justify-center items-center gap-12">
+            <div className="flex justify-center items-center gap-12 bg-indigo-500 bg-opacity-10 rounded-full h-10 p-0">
               <Link
                 href="/"
-                className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
+                className="text-indigo-100 text-sm py-2 px-6  rounded-3xl hover:bg-indigo-900 transition-colors"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
+                className="text-indigo-100 text-sm py-2 px-6  rounded-3xl hover:bg-indigo-900 transition-colors"
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-violet-100 text-base p-2 rounded-3xl hover:bg-violet-800 transition-colors"
+                className="text-indigo-100 text-sm py-2 px-6  rounded-3xl hover:bg-indigo-900 transition-colors"
               >
                 Contact
               </Link>

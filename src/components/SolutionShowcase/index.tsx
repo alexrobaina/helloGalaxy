@@ -69,7 +69,7 @@ export const SolutionShowcase: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-black overflow-hidden">
+    <section className="py-20 px-6 md:px-6 bg-gray-950 overflow-hidden">
       <motion.div
         className="container mx-auto"
         initial="hidden"
@@ -83,8 +83,8 @@ export const SolutionShowcase: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-violet-500 font-mono">{t('title')}</h2>
-          <p className="text-lg text-gray-300 mt-4 font-mono">{t('description')}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-violet-500 ">{t('title')}</h2>
+          <p className="text-lg text-gray-300 mt-4 ">{t('description')}</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -106,16 +106,16 @@ export const SolutionShowcase: React.FC = () => {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-violet-500 mt-6 font-mono">
+                <h3 className="text-xl font-semibold text-violet-500 mt-6 ">
                   {solution.title}
                 </h3>
-                <p className="text-gray-300 mt-4 leading-relaxed font-mono text-sm">
+                <p className="text-gray-300 mt-4 leading-relaxed  text-sm">
                   {solution.description}
                 </p>
 
                 {/* Terminal-style indicator */}
                 <div className="absolute bottom-4 left-6 flex items-center text-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="font-mono text-sm">{'>'}</span>
+                  <span className=" text-sm">{'>'}</span>
                   <motion.span
                     className="w-2 h-4 bg-violet-500 ml-1"
                     animate={{ opacity: [1, 0] }}
