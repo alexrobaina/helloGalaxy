@@ -5,6 +5,23 @@
     "startButton": "Start Now",
     "exploreButton": "Learn More"
   },
+  "Projects": {
+    "title": "My work",
+    "description": "Projects",
+    "description2": "The following projects showcase my skills and experience through examples of my real-world work. You can see each project in production. It reflects my ability to solve complex problems, work with different technologies and manage projects effectively.",
+    "project1": {
+        "description": "A web-based platform that allows users to monitor and analyze cross-chain transactions on the Solana IBC. Developed using Next.js, GraphQL, and Tailwind, this project showcases my expertise in building complex, high-performance web applications with a focus on blockchain technology"
+    },
+    "project2": {
+        "description": "A web application that serves to create alerts and monitor different blockchain networks, cryptocurrency wallets and offers a large number of transaction analysis and monitoring options."
+    },
+    "project3": {
+        "description": "A platform for pet lovers to find and share information about pets, including adoption, training, and care tips. manages veterinarians and pet stores."
+    },
+    "project4": {
+        "description": "A chatbot AI that allows users to chat with a chatbot and get answers to their questions about the company and the services they offer."
+    }
+},
   "PainPointsBlock": {
     "title": "Solve Customer Service Challenges",
     "description": "Hello Galaxy offers solutions designed to overcome the most common challenges in customer interaction.",

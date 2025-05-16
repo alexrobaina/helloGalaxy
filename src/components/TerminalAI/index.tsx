@@ -1,8 +1,9 @@
 'use client';
 
+import { FC } from 'react';
 // import { useTranslations } from 'next-intl';
 import { VintageTerminal } from '../VintageTerminal';
-export const TerminalAI: React.FC = () => {
+export const TerminalAI: FC = () => {
   // const t = useTranslations('TerminalAI');
 
   return (
@@ -11,6 +12,10 @@ export const TerminalAI: React.FC = () => {
       className="py-20 px-6 md:px-12 bg-gradient-to-b from-gray-950 to-gray-950"
     >
       <div className="container mx-auto">
+        <div className='flex justify-center flex-col items-center' >
+          <h1 className='text-4xl flex flex-col text-slate-100 text-balance md:text-6xl font-bold text-center leading-tight sm:mb-4'>Juega con nuestro chat-GPT</h1>
+          <p className='text-xl flex text-slate-100 tedt balance text-center leading-tight just'>Preguntale todo sobre nosotros</p>
+        </div>
         <div className="text-center mb-12">
           <VintageTerminal />
         </div>
@@ -18,3 +23,4 @@ export const TerminalAI: React.FC = () => {
     </section>
   );
 };
+  

@@ -48,8 +48,8 @@ const ExperienceCard: FC<{ experience: ExperienceItem }> = ({ experience }) => {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <h3 className="text-slate-50 text-2xl font-bold font-mono">{experience.title}</h3>
-        <p className="text-gray-300 text-lg font-mono" style={{ margin: 0 }}>
+        <h3 className="text-slate-50 text-2xl font-bold ">{experience.title}</h3>
+        <p className="text-gray-300 text-lg " style={{ margin: 0 }}>
           {experience.company_name}
         </p>
       </motion.div>
@@ -58,7 +58,7 @@ const ExperienceCard: FC<{ experience: ExperienceItem }> = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-gray-300 text-lg pl-1 tracking-wider font-mono"
+            className="text-gray-300 text-lg pl-1 tracking-wider "
           >
             {point}
           </li>
@@ -106,7 +106,7 @@ export const WorkExperience = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-12 bg-black overflow-hidden">
+    <section className="py-20 bg-gray-950 overflow-hidden">
       <motion.div
         className="container mx-auto"
         initial="hidden"
@@ -118,10 +118,10 @@ export const WorkExperience = () => {
         }}
       >
         <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold text-violet-500 font-mono mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-violet-500 mb-4">
             What I have done so far
           </h2>
-          <h3 className="text-2xl md:text-3xl text-gray-300 font-mono">Work Experience</h3>
+          <h3 className="text-2xl md:text-3xl text-gray-300">Work Experience</h3>
         </div>
 
         <div className="mt-20">

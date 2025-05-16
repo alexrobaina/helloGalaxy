@@ -1,0 +1,150 @@
+import { petsloveApp, picassoExporer, rangeApp, aiChatbot } from '@/assets/images'
+
+export const projects = (t: (s: string) => string) => {
+  return [
+    {
+      name: 'AVS for Solana IBC explorer',
+      description: t('project1.description'),
+      tags: [
+        {
+          name: 'nextjs',
+          color: 'bg-teal-500',
+        },
+        {
+          name: 'graphql',
+          color: 'bg-cyan-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-blue-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-green-500',
+        },
+      ],
+      image: picassoExporer,
+      appLink: 'https://avs.picasso.xyz/',
+      sourceCodeLink: null,
+    },
+    {
+      image: rangeApp,
+      name: 'Range',
+      description: t('project2.description'),
+      tags: [
+        {
+          name: 'ViteJs',
+          color: 'bg-yellow-500',
+        },
+        {
+          name: 'React',
+          color: 'bg-amber-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-violet-500',
+        },
+        {
+          name: 'Postgresql',
+          color: 'bg-fuchsia-500',
+        },
+        {
+          name: 'Prisma',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Express',
+          color: 'bg-teal-500',
+        },
+      ],
+      sourceCodeLink: null,
+      appLink: 'https://app.range.org/',
+    },
+    {
+      name: `Pet's love`,
+      description: t('project3.description'),
+      tags: [
+        {
+          name: 'ViteJs',
+          color: 'bg-teal-500',
+        },
+        {
+          name: 'React',
+          color: 'bg-cyan-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-violet-500',
+        },
+        {
+          name: 'Postgresql',
+          color: 'bg-fuchsia-500',
+        },
+        {
+          name: 'Prisma',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Express',
+          color: 'bg-teal-500',
+        },
+      ],
+      image: petsloveApp,
+      sourceCodeLink: 'https://github.com/alexrobaina/frontend_petsLove',
+      appLink: 'https://petslove.app',
+    },
+    {
+      name: `Chatbot AI`,
+      description: t('project4.description'),
+      tags: [
+        {
+          name: 'NextJs',
+          color: 'bg-yellow-500',
+        },
+        {
+          name: 'i18N',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'NodeJs',
+          color: 'bg-green-500',
+        },
+        {
+          name: 'Meta',
+          color: 'bg-cyan-500',
+        },
+        {
+          name: 'OpenAI',
+          color: 'bg-violet-500',
+        },
+        {
+          name: 'Google Scheets',
+          color: 'bg-fuchsia-500',
+        },
+        {
+          name: 'Chatwoot',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+      ],
+      image: aiChatbot,
+      sourceCodeLink: '',
+      appLink: 'https://www.hellogalaxy.dev/es-ES',
+    },
+  ]
+}

@@ -38,11 +38,11 @@ export const CodeCommands: FC<CodeCommandsProps> = ({ text }) => {
 
   return (
     <div
-      className="cursor-pointer flex ring-1 ring-cyan-700 items-center bg-slate-800 text-white font-mono px-4 py-2 rounded-lg p-4 h-12 mt-4"
+      className="cursor-pointer flex ring-1 ring-cyan-700 items-center bg-slate-800 text-white  px-4 py-2 rounded-lg p-4 h-12 mt-4"
       onClick={handleCopy}
     >
       <span style={{ marginRight: '8px', color: '#999' }}>$</span>
-      <span className="text-white text-sm font-mono md:text-base">{text}</span>
+      <span className="text-white text-sm  md:text-base">{text}</span>
       <button
         style={{
           color: '#999',
