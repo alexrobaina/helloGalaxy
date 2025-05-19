@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { LottieAnimation } from '../LottieAnimations';
 import ecommerce from '../../../public/assets/Lottie/Ecommerce.json';
-import userInterface from '../../../public/assets/lottie/interface.json';
+import userInterface from '../../../public/assets/Lottie/interface.json';
 import dataManagement from '../../../public/assets/Lottie/Copywriting.json';
 import webDesign from '../../../public/assets/Lottie/Online Tutorials.json'
 import { useTranslations } from 'next-intl';
