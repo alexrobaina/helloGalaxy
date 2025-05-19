@@ -40,18 +40,30 @@
   },
   "SolutionShowcase": {
     "title": "Soluciones simples y eficaces",
-    "description": "Hello Galaxy integra tecnología avanzada en una plataforma fácil de usar, adaptada a las necesidades de cada cliente.",
+    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
     "solution1": {
-      "title": "Chatbots inteligentes",
+      "title": "Diseño y Desarrollo Web",
       "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
     },
     "solution2": {
-      "title": "Almacenamiento y análisis de datos",
-      "description": "Registra y organiza las conversaciones en Google Sheets para obtener información valiosa que optimice tus estrategias."
+      "title": "Aplicaciones Web a Medida",
+      "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
     },
     "solution3": {
-      "title": "Flujos personalizados",
-      "description": "Crea flujos de conversación únicos que guíen a tus clientes hacia soluciones rápidas y efectivas."
+      "title": "Infraestructura y Datos en la Nube",
+      "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery, AWS."
+    },
+    "solution4": {
+      "title": "Tiendas Online",
+      "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+    },
+    "solution5": {
+      "title": "Marketing en Instagram",
+      "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca."
+    },
+    "solution6": {
+      "title": "Automatización de Procesos y Chatbots",
+      "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplificá tareas repetitivas con tecnología inteligente."
     }
   },
   "InteractiveDemo": {

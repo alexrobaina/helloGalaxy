@@ -1,30 +1,26 @@
-import { petsloveApp, picassoExporer, rangeApp, aiChatbot } from '@/assets/images'
+import { petsloveApp, carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinetteBone } from '@/assets/images'
 
 export const projects = (t: (s: string) => string) => {
   return [
     {
-      name: 'AVS for Solana IBC explorer',
+      name: 'Deville Argentona',
       description: t('project1.description'),
       tags: [
         {
-          name: 'nextjs',
+          name: 'Shopify',
           color: 'bg-teal-500',
         },
         {
-          name: 'graphql',
+          name: 'HTML',
           color: 'bg-cyan-500',
         },
         {
-          name: 'Typescript',
+          name: 'CSS',
           color: 'bg-blue-500',
         },
-        {
-          name: 'Tailwind',
-          color: 'bg-green-500',
-        },
       ],
-      image: picassoExporer,
-      appLink: 'https://avs.picasso.xyz/',
+      image: deville,
+      appLink: 'https://devilleargentina.com.ar/',
       sourceCodeLink: null,
     },
     {
@@ -65,41 +61,71 @@ export const projects = (t: (s: string) => string) => {
       appLink: 'https://app.range.org/',
     },
     {
-      name: `Pet's love`,
-      description: t('project3.description'),
+      name: 'Deville Argentina',
+      description: t('project1.description'),
       tags: [
         {
-          name: 'ViteJs',
+          name: 'Shopify',
           color: 'bg-teal-500',
         },
         {
-          name: 'React',
+          name: 'HTML',
           color: 'bg-cyan-500',
         },
         {
-          name: 'Tailwind',
-          color: 'bg-violet-500',
+          name: 'CSS',
+          color: 'bg-blue-500',
+        },
+      ],
+      image: deville,
+      appLink: 'https://devilleargentina.com.ar/',
+      sourceCodeLink: null,
+    },
+    {
+      name: 'Antoinette Bone',
+      description: t('project2.description'),
+      tags: [
+        {
+          name: 'Antoinette Bone',
+          color: 'bg-teal-500',
         },
         {
-          name: 'Postgresql',
-          color: 'bg-fuchsia-500',
-        },
-        {
-          name: 'Prisma',
-          color: 'bg-pink-500',
+          name: 'NextJs',
+          color: 'bg-yellow-500',
         },
         {
           name: 'Typescript',
           color: 'bg-rose-500',
         },
         {
-          name: 'Express',
-          color: 'bg-teal-500',
+          name: 'Tailwind',
+          color: 'bg-pink-500',
         },
       ],
-      image: petsloveApp,
-      sourceCodeLink: 'https://github.com/alexrobaina/frontend_petsLove',
-      appLink: 'https://petslove.app',
+      image: antoinetteBone,
+      appLink: 'https://abonelaw.com/',
+      sourceCodeLink: null,
+    },
+    {
+      name: 'Carpinteria Robaina',
+      description: t('project2.description'),
+      tags: [
+        {
+          name: 'NextJs',
+          color: 'bg-yellow-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-pink-500',
+        },
+      ],
+      image: carpinteriaRobaina,
+      appLink: 'https://arcarpinteria.vercel.app/',
+      sourceCodeLink: null,
     },
     {
       name: `Chatbot AI`,
@@ -145,6 +171,43 @@ export const projects = (t: (s: string) => string) => {
       image: aiChatbot,
       sourceCodeLink: '',
       appLink: 'https://www.hellogalaxy.dev/es-ES',
+    },
+    {
+      name: `Pet's love`,
+      description: t('project3.description'),
+      tags: [
+        {
+          name: 'ViteJs',
+          color: 'bg-teal-500',
+        },
+        {
+          name: 'React',
+          color: 'bg-cyan-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-violet-500',
+        },
+        {
+          name: 'Postgresql',
+          color: 'bg-fuchsia-500',
+        },
+        {
+          name: 'Prisma',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Express',
+          color: 'bg-teal-500',
+        },
+      ],
+      image: petsloveApp,
+      sourceCodeLink: 'https://github.com/alexrobaina/frontend_petsLove',
+      appLink: 'https://petslove.app',
     },
   ]
 }

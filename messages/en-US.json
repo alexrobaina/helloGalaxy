@@ -42,16 +42,28 @@
     "title": "Simple and Effective Solutions",
     "description": "Hello Galaxy integrates advanced technology into an easy-to-use platform tailored to each customer's needs.",
     "solution1": {
-      "title": "Smart Chatbots",
-      "description": "Personalize your customer service with AI-powered bots that answer questions, provide technical support, and facilitate sales."
+      "title": "Diseño y Desarrollo Web",
+      "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
     },
     "solution2": {
-      "title": "Data Storage and Analysis",
-      "description": "Record and organize conversations in Google Sheets to gain valuable insights that optimize your strategies."
+      "title": "Aplicaciones Web a Medida",
+      "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
     },
     "solution3": {
-      "title": "Customizable Workflows",
-      "description": "Create unique conversation flows that guide your customers toward fast and effective solutions."
+      "title": "Infraestructura y Datos en la Nube",
+      "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery, AWS."
+    },
+    "solution4": {
+      "title": "Tiendas Online",
+      "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+    },
+    "solution5": {
+      "title": "Marketing en Instagram",
+      "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca."
+    },
+    "solution6": {
+      "title": "Automatización de Procesos y Chatbots",
+      "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplificá tareas repetitivas con tecnología inteligente."
     }
   },
   "InteractiveDemo": {

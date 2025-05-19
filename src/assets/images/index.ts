@@ -14,18 +14,25 @@ import Databases from './databases.webp'
 import OpenSourse from './openSource.webp'
 import stackedWaves from './stacked-waves-haikei.png'
 import aiChatbot from './aiChatbot.png'
+import deville from './deville.png'
+import antoinetteBone from './theLaw.png'
+import carpinteriaRobaina from './carpinteriaRobaina.png'
+
 export {
   web,
+  carpinteriaRobaina,
   Avatar,
+  antoinetteBone,
   github,
   mobile,
   backend,
   creator,
+  deville,
   rangeApp,
   Databases,
+  aiChatbot,
   OpenSourse,
   petsloveApp,
-  aiChatbot,
   stackedWaves,
   picassoExporer,
   MobileIllustration,

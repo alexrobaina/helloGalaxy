@@ -2,9 +2,11 @@
 
 import { motion } from 'framer-motion';
 import { LottieAnimation } from '../LottieAnimations';
-import customerAttractionIcon from '../../../public/customerAttraction.json';
-import businessAnalytics from '../../../public/businessAnalytics.json';
-import dataManagement from '../../../public/dataManagement.json';
+import ecommerce from '../../../public/assets/Lottie/Ecommerce.json';
+import softwareFactory from '../../../public/assets/Lottie/SoftwareHardware.json'
+import userInterface from '../../../public/assets/lottie/UserInterface.json';
+import dataManagement from '../../../public/assets/Lottie/Copywriting.json';
+import webDesign from '../../../public/assets/Lottie/Online Tutorials.json'
 import { useTranslations } from 'next-intl';
 
 export const SolutionShowcase: React.FC = () => {
@@ -49,24 +51,46 @@ export const SolutionShowcase: React.FC = () => {
 
   const solutions = [
     {
-      animation: customerAttractionIcon,
+      animation: webDesign,
       width: 150,
-      title: t('solution1.title'),
-      description: t('solution1.description'),
+      title: t('solution1.title'), // Diseño y Desarrollo Web
+      description: t('solution1.description'), // Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.
     },
     {
-      animation: businessAnalytics,
+      animation: userInterface,
       width: 190,
-      title: t('solution2.title'),
-      description: t('solution2.description'),
+      title: t('solution2.title'), // Aplicaciones Web a Medida
+      description: t('solution2.description'), // Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa.
     },
     {
       animation: dataManagement,
       width: 250,
-      title: t('solution3.title'),
-      description: t('solution3.description'),
+      title: t('solution3.title'), // Infraestructura y Datos en la Nube
+      description: t('solution3.description'), // Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery.
+    },
+    {
+      // animation: ecommerceBuild,
+      animation: ecommerce,
+      width: 210,
+      title: t('solution4.title'), // Tiendas Online
+      description: t('solution4.description'), // Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas.
+    },
+    {
+      // animation: socialMediaMarketing,
+      animation: dataManagement,
+      width: 180,
+      title: t('solution5.title'), // Marketing en Instagram
+      description: t('solution5.description'), // Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca.
+    },
+    {
+      // animation: automationBots,
+      animation: dataManagement,
+      width: 220,
+      title: t('solution6.title'), // Automatización y Chatbots
+      description: t('solution6.description'), // Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna.
     },
   ];
+  
 
   return (
     <section className="py-20 px-6 md:px-6 bg-gray-950 overflow-hidden">
@@ -83,7 +107,7 @@ export const SolutionShowcase: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-violet-500 ">{t('title')}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-violet-50 ">{t('title')}</h2>
           <p className="text-lg text-gray-300 mt-4 ">{t('description')}</p>
         </motion.div>
 
@@ -96,32 +120,22 @@ export const SolutionShowcase: React.FC = () => {
               className="relative group"
             >
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-violet-500/20 rounded-2xl blur-xl opacity-50 group-hover:opacity-100 transition-all duration-500" />
+              <div className="absolute inset-0 rounded-4xl blur-xl opacity-50 group-hover:opacity-100 transition-all duration-500 shadow-3xl shadow-indigo-800" />
 
               {/* Card */}
-              <motion.div className="relative rounded-2xl border-2 border-violet-700 bg-black p-6 text-center backdrop-blur-sm h-[340px] shadow-[0_0_15px_rgba(0,255,0,0.2)] group-hover:shadow-[0_0_25px_rgba(0,255,0,0.3)] transition-all duration-500">
+              <motion.div className="relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm h-[340px] shadow-2xl shadow-indigo-500/55 transition-all duration-500">
                 {/* Animation container */}
                 <div className="h-[150px] flex items-center justify-center filter saturate-150">
                   <LottieAnimation width={solution.width} animation={solution.animation} />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-semibold text-violet-500 mt-6 ">
+                <h3 className="text-xl font-semibold text-violet-50 mt-6 ">
                   {solution.title}
                 </h3>
                 <p className="text-gray-300 mt-4 leading-relaxed  text-sm">
                   {solution.description}
                 </p>
-
-                {/* Terminal-style indicator */}
-                <div className="absolute bottom-4 left-6 flex items-center text-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className=" text-sm">{'>'}</span>
-                  <motion.span
-                    className="w-2 h-4 bg-violet-500 ml-1"
-                    animate={{ opacity: [1, 0] }}
-                    transition={{ duration: 1, repeat: Infinity }}
-                  />
-                </div>
               </motion.div>
             </motion.div>
           ))}
