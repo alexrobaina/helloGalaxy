@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 import { LottieAnimation } from '../LottieAnimations';
 import ecommerce from '../../../public/assets/Lottie/Ecommerce.json';
 import userInterface from '../../../public/assets/Lottie/interface.json';
-import dataManagement from '../../../public/assets/Lottie/Copywriting.json';
-import webDesign from '../../../public/assets/Lottie/Online Tutorials.json'
+import softwareHarware from '../../../public/assets/Lottie/SoftwareHardware.json'
+import computer from '../../../public/assets/Lottie/computer.json'
+import automation from '../../../public/assets/Lottie/automation.json'
+import phone from '../../../public/assets/Lottie/phone.json'
 import { useTranslations } from 'next-intl';
 
 export const SolutionShowcase: React.FC = () => {
@@ -50,41 +52,41 @@ export const SolutionShowcase: React.FC = () => {
 
   const solutions = [
     {
-      animation: webDesign,
-      width: 150,
+      width: 190,
+      animation: computer,
       title: t('solution1.title'), // Diseño y Desarrollo Web
       description: t('solution1.description'), // Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.
     },
     {
-      animation: userInterface,
       width: 190,
+      animation: userInterface,
       title: t('solution2.title'), // Aplicaciones Web a Medida
-      description: t('solution2.description'), // Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa.
+      description: t('solution2.description'), // Des arrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa.
     },
     {
-      animation: dataManagement,
-      width: 250,
+      width: 230,
+      animation: softwareHarware,
       title: t('solution3.title'), // Infraestructura y Datos en la Nube
       description: t('solution3.description'), // Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery.
     },
     {
       // animation: ecommerceBuild,
+      width: 180,
       animation: ecommerce,
-      width: 210,
       title: t('solution4.title'), // Tiendas Online
       description: t('solution4.description'), // Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas.
     },
     {
       // animation: socialMediaMarketing,
-      animation: dataManagement,
-      width: 180,
+      width: 190,
+      animation: phone,
       title: t('solution5.title'), // Marketing en Instagram
       description: t('solution5.description'), // Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca.
     },
     {
       // animation: automationBots,
-      animation: dataManagement,
       width: 220,
+      animation: automation,
       title: t('solution6.title'), // Automatización y Chatbots
       description: t('solution6.description'), // Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna.
     },
@@ -122,7 +124,7 @@ export const SolutionShowcase: React.FC = () => {
               <div className="absolute inset-0 rounded-4xl blur-xl opacity-50 group-hover:opacity-100 transition-all duration-500 shadow-3xl shadow-indigo-800" />
 
               {/* Card */}
-              <motion.div className="relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm h-[340px] shadow-2xl shadow-indigo-500/55 transition-all duration-500">
+              <motion.div className="relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm h-[350px] shadow-2xl shadow-indigo-500/55 transition-all duration-500">
                 {/* Animation container */}
                 <div className="h-[150px] flex items-center justify-center filter saturate-150">
                   <LottieAnimation width={solution.width} animation={solution.animation} />

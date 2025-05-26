@@ -1,11 +1,11 @@
 'use client';
 
 import React, { FC, useState, useEffect } from 'react';
-// import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { CodeCommands } from '../CodeCommands';
 
 export const Hero: FC = () => {
-  // const t = useTranslations('Hero');
+  const t = useTranslations('Hero');
 
   const [, setIsMobile] = useState(false);
 
@@ -25,17 +25,17 @@ export const Hero: FC = () => {
       <div className="container flex flex-col md:flex-row justify-center z-10 ">
         <div className="max-w-6xl items-center text-center md:text-left flex flex-col gap-4">
           <h1 className="text-4xl flex flex-col text-slate-100 text-balance md:text-6xl font-bold text-center leading-tight sm:mb-4">
-            <span>Innovate. Build. Scale. Welcome to Hello Galaxi.</span>
+            <span>{t('title')}</span>
           </h1>
           <p className="text-lg text-slate-100 md:text-xl mb-6 text-balance text-center">
-            <CodeCommands text="Bridging technology and creativity to shape the future." />
+            <CodeCommands text={t('description')} />
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <a
               href="#pricing"
               className="bg-indigo-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-slate-600 transition"
             >
-              Explore Our Solutions
+              {t('startButton')}
             </a>
           </div>
         </div>

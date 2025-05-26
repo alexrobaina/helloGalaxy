@@ -1,15 +1,16 @@
+// /Users/alexrobaina/projects/hello-galaxy/src/components/VintageTerminal/index.tsx
 'use client';
-import { useRef, useState, useEffect } from 'react';
-import { useChatGPT } from '@/hooks/useChatGPT';
+
+import { useRef, useState, useLayoutEffect, useCallback, KeyboardEvent, ChangeEvent } from 'react';
+import { useChatGPT, contentPrompt } from '@/hooks/useChatGPT';
+import { useTranslations } from 'next-intl';
+import { getTerminalContentByLanguage } from './contants';
+import { useParams } from 'next/navigation';
 
 interface HistoryItem {
   prompt: string;
   command: string;
   isTyping?: boolean;
-}
-
-interface CommandResponse {
-  [key: string]: string[];
 }
 
 export const VintageTerminal = () => {
@@ -18,123 +19,65 @@ export const VintageTerminal = () => {
   const [hasShownWelcome, setHasShownWelcome] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
-  const promptLabel = 'alex@my-machine:~$';
+  const promptLabel = 'helloGalaxy@my-machine:~$';
+  const params = useParams();
+  const [isLoading, setLoading] = useState(false)
+  const t = useTranslations("TerminalAI")
+  const language = params?.locale === 'es-ES' ? 'es-ES' : 'en-US';
 
-  const welcomeMessage = [
-    '/_/_/_/_/ /_/_/_/_/ /_/_/ /_/_/',
-    '',
-    '🤖 AI-Powered Terminal Assistant',
-    '----------------------------------------',
-    'Welcome! This terminal is integrated with ChatGPT to help you learn more about us.',
-    '',
-    'Available commands:',
-    '  help     - Show all available commands',
-    '  about    - Learn about our company',
-    '  services - Explore our services',
-    '  contact  - Get contact information',
-    '  clear    - Clear terminal screen',
-    '',
-    'Type a command and press Enter to begin...',
-  ];
+  const { welcomeMessage } = getTerminalContentByLanguage(language);
 
-  const commandResponses: CommandResponse = {
-    about: [
-      '🚀 About Hello Galaxi',
-      '----------------------------------------',
-      'We are a cutting-edge software development company specializing in:',
-      '',
-      '• Full-stack Web Development',
-      '• Blockchain Solutions & Web3',
-      '• Mobile App Development',
-      '• AI Integration & Custom Solutions',
-      '',
-      'Our team brings experience from companies like Composable Finance,',
-      'Scanworks, and major fintech projects.',
-    ],
-    services: [
-      '💻 Our Services',
-      '----------------------------------------',
-      '1. Web Development',
-      '   - Next.js & React Applications',
-      '   - GraphQL API Integration',
-      '   - Responsive UI/UX Design',
-      '',
-      '2. Blockchain Development',
-      '   - Solana IBC Explorer',
-      '   - Smart Contract Development',
-      '   - Web3 Integration',
-      '',
-      '3. Mobile Development',
-      '   - React Native Applications',
-      '   - Cross-platform Solutions',
-      '   - Fintech & Payment Systems',
-      '',
-      '4. Technical Consulting',
-      '   - Architecture Design',
-      '   - Performance Optimization',
-      '   - Code Review & Auditing',
-    ],
-    contact: [
-      '📬 Contact Information',
-      '----------------------------------------',
-      'Email: hello@galaxi.dev',
-      'LinkedIn: linkedin.com/company/hello-galaxi',
-      'GitHub: github.com/hello-galaxi',
-      '',
-      'Feel free to reach out for:',
-      '• Project Inquiries',
-      '• Partnership Opportunities',
-      '• Technical Consultations',
-    ],
-    clear: [],
-  };
+  // Maintain a chat messages array
+  const [messages, setMessages] = useState<{ role: string; content: string }[]>([
+    { role: "system", content: contentPrompt(language) },
+  ]);
 
-  const { generateResponse } = useChatGPT();
+  const { generateResponse } = useChatGPT(language);
 
-  // Auto scroll to bottom when history changes
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (terminalRef.current) {
       terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
     }
   }, [history]);
+  
 
-  const handleCommand = async (command: string) => {
-    const normalizedCommand = command.toLowerCase().trim();
-
-    if (normalizedCommand === 'clear') {
+  const handleCommand = async (command: string, language: string) => {
+    const normalizedCommand = command.trim();
+    if (!normalizedCommand) {
+      setLoading(false);
+      return;
+    }
+  
+    setLoading(true);
+  
+    if (normalizedCommand.toLowerCase() === 'clear') {
       setHistory([]);
+      setMessages([{ role: "system", content: contentPrompt(language) }]);
+      setLoading(false);
       return;
     }
-
-    // First check for static responses
-    const staticResponse = commandResponses[normalizedCommand];
-    if (staticResponse) {
-      setTimeout(() => {
-        setHistory(prev => [
-          ...prev,
-          ...staticResponse.map(line => ({
-            prompt: '',
-            command: line,
-            isTyping: true,
-          })),
-        ]);
-      }, 500);
-      return;
-    }
-
-    // If no static response, use ChatGPT
+  
+    // Update messages with the new user command
+    const newMessages = [...messages, { role: "user", content: command }];
+    setMessages(newMessages);
+  
+    // Show loading in the UI
+    setHistory(prev => [
+      ...prev,
+      { prompt: '', command: `🤔 ${t("thinking")}`, isTyping: true }
+    ]);
+  
     try {
-      // Show loading state
-      setHistory(prev => [...prev, { prompt: '', command: '🤔 Thinking...', isTyping: true }]);
-
-      // Generate response from ChatGPT
-      const response = await generateResponse(command);
-
-      // Remove loading message and add AI response
-      setHistory(prev => [
-        ...prev.filter(item => item.command !== '🤔 Thinking...'),
-        { prompt: '🤖', command: response, isTyping: true },
-      ]);
+      const response = await generateResponse(newMessages);
+      // Remove the loading message and add the assistant's response
+      setHistory(prev =>
+        [
+          ...prev.filter(item => item.command !== `🤔 ${t("thinking")}`),
+          { prompt: '🤖', command: response, isTyping: true }
+        ]
+      );
+      // Add assistant message to context
+      setMessages(prev => [...prev, { role: "assistant", content: response }]);
     } catch (error) {
       console.log(error)
       setHistory(prev => [
@@ -145,23 +88,22 @@ export const VintageTerminal = () => {
           isTyping: true,
         },
       ]);
+    } finally {
+      setLoading(false);
     }
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = useCallback((e: KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       const command = currentInput.trim();
+      if (!command || isLoading) return; // Prevent empty or loading
 
-      // Add the current command with prompt to history
       setHistory(prev => [...prev, { prompt: promptLabel, command, isTyping: true }]);
-
-      // Process the command
-      handleCommand(command);
-
+      handleCommand(command, language);
       setCurrentInput('');
     }
-  };
+  }, [currentInput, language, isLoading]);
 
   const handleTerminalClick = () => {
     textareaRef.current?.focus();
@@ -178,6 +120,25 @@ export const VintageTerminal = () => {
     }
   };
 
+  const handleChangeChat = (e: ChangeEvent) => {
+    if (isLoading) return; // Prevent input changes while loading
+    const target = e.target as HTMLTextAreaElement;
+    const value: string = target.value;
+    if (value === undefined || value === null) return;
+    if (value.length > 100) {
+      setCurrentInput(value.slice(0, 100));
+      return;
+    }
+    if (value.includes('\n')) {
+      setCurrentInput(value.replace(/\n/g, ''));
+    }
+    if (value.length === 0) {
+      setCurrentInput('');
+      return;
+    }
+    setCurrentInput(value);
+  };
+
   return (
     <div className="flex flex-col items-center justify-center w-full">
       <div
@@ -189,25 +150,27 @@ export const VintageTerminal = () => {
           {history.map((line, idx) => (
             <div
               key={idx}
-              className={`flex transition-opacity duration-300 ${
-                line.isTyping ? 'animate-typewriter' : ''
-              }`}
+              className={`flex transition-opacity duration-300 ${line.isTyping ? 'animate-typewriter' : ''}`}
             >
-              {line.prompt && <span className="text-violet-500 shrink-0">{line.prompt}&nbsp;</span>}
+              {line.prompt && (
+                <span className="text-violet-500 shrink-0">{line.prompt}&nbsp;</span>
+              )}
               <span className="text-gray-50 whitespace-pre-wrap break-words">{line.command}</span>
             </div>
           ))}
 
           {/* Current input line */}
           <div className="flex items-start">
-            <span className="text-violet-500 shrink-0">{promptLabel}&nbsp;</span>
+            {!isLoading && (
+              <span className="text-violet-500 shrink-0">{promptLabel}&nbsp;</span>
+            )}
             <textarea
               rows={1}
               ref={textareaRef}
               value={currentInput}
               onKeyDown={handleKeyDown}
-              onChange={e => setCurrentInput(e.target.value)}
-              className="bg-black text-gray-50  border-none outline-none resize-none w-full p-0 overflow-hidden"
+              onChange={handleChangeChat}
+              className="bg-black text-gray-50 border-none outline-none resize-none w-full p-0 overflow-hidden"
             />
           </div>
         </div>

@@ -1,145 +1,114 @@
 {
   "Hero": {
-    "title": "Simplify Customer Service with AI and WhatsApp",
-    "description": "Transform how you interact with your customers by integrating intelligent tools that optimize your business and boost your results. Let's take your business to the next level with Hello Galaxy.",
-    "startButton": "Start Now",
-    "exploreButton": "Learn More"
+    "title": "Innovation and scalability. Welcome to Hello Galaxy",
+    "description": "Uniting technology and creativity to build the future.",
+    "startButton": "Explore our solutions"
   },
-  "Projects": {
-    "title": "My work",
+  "Navbar": {
+    "solutions": "Solutions",
+    "projects": "Projects",
+    "contact": "Contact us",
+    "chat": "Chat IA"
+  },
+  "projects": {
     "description": "Projects",
-    "description2": "The following projects showcase my skills and experience through examples of my real-world work. You can see each project in production. It reflects my ability to solve complex problems, work with different technologies and manage projects effectively.",
+    "description2": "The following projects showcase our expertise through real-world examples of the work we do. Each production project reflects our ability to solve complex problems, work with diverse technologies, and manage projects effectively.",
     "project1": {
-        "description": "A web-based platform that allows users to monitor and analyze cross-chain transactions on the Solana IBC. Developed using Next.js, GraphQL, and Tailwind, this project showcases my expertise in building complex, high-performance web applications with a focus on blockchain technology"
+      "description": "We built the Deville Argentina Shopify store: organized the content, created categories, and implemented various payment methods to deliver a secure and efficient shopping experience now!"
     },
     "project2": {
-        "description": "A web application that serves to create alerts and monitor different blockchain networks, cryptocurrency wallets and offers a large number of transaction analysis and monitoring options."
+      "description": "Range is a platform that lets you create alerts and monitor multiple blockchain networks and cryptocurrency wallets in real time, with detailed transaction analysis and customized reports."
     },
     "project3": {
-        "description": "A platform for pet lovers to find and share information about pets, including adoption, training, and care tips. manages veterinarians and pet stores."
+      "description": "We created the landing page for attorney Antoninette Bone, featuring a professional design and optimized usability that highlights her legal services, builds trust, and streamlines new client acquisition."
     },
     "project4": {
-        "description": "A chatbot AI that allows users to chat with a chatbot and get answers to their questions about the company and the services they offer."
-    }
-},
-  "PainPointsBlock": {
-    "title": "Solve Customer Service Challenges",
-    "description": "Hello Galaxy offers solutions designed to overcome the most common challenges in customer interaction.",
-    "paintPoint1": {
-      "title": "Fast and Personalized Responses",
-      "description": "Serve your customers instantly, providing accurate information and efficient support at all times."
+      "description": "We developed the Carpintería Robaina landing page: created persuasive content, optimized SEO, and integrated advanced, dynamic technologies to showcase their services and attract clients today."
     },
-    "paintPoint2": {
-      "title": "Time Optimization",
-      "description": "Automate repetitive tasks and focus more time on strategies that drive your business growth."
+    "project5": {
+      "description": "We developed the Chatbot AI landing page: crafted an intuitive interface, deployed the bot for 24/7 automated support, and maximized visitor-to-customer conversion online."
     },
-    "paintPoint3": {
-      "title": "Seamless Integration",
-      "description": "Connect WhatsApp, Google Sheets, and Chatwoot to manage conversations, store data, and enhance customer experience."
+    "project6": {
+      "description": "We created Pet’s Love, a platform for animal lovers that streamlines adoptions, shares care tips, and connects you with online veterinarians to ensure your pet’s well-being."
     }
   },
   "SolutionShowcase": {
-    "title": "Simple and Effective Solutions",
-    "description": "Hello Galaxy integrates advanced technology into an easy-to-use platform tailored to each customer's needs.",
+    "title": "Simple and effective solutions",
+    "description": "We create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus. We help you digitize your business and make your cloud data more efficient.",
     "solution1": {
-      "title": "Diseño y Desarrollo Web",
-      "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
+      "title": "Web Design and Development",
+      "description": "Personalize your customer service with AI-powered bots that answer questions, provide technical support, and facilitate sales."
     },
     "solution2": {
-      "title": "Aplicaciones Web a Medida",
-      "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
+      "title": "Custom Web Applications",
+      "description": "We develop scalable, secure web solutions to automate processes, manage data, and improve operational efficiency."
     },
     "solution3": {
-      "title": "Infraestructura y Datos en la Nube",
-      "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery, AWS."
+      "title": "Cloud Infrastructure",
+      "description": "We configure your cloud infrastructure and organize your data using tools like Google Sheets, Firestore, BigQuery, and AWS."
     },
     "solution4": {
-      "title": "Tiendas Online",
-      "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+      "title": "Online Stores",
+      "description": "We launch your e-commerce on platforms like Shopify and Tiendanube, integrating design, payments, and custom features."
     },
     "solution5": {
-      "title": "Marketing en Instagram",
-      "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca."
+      "title": "Instagram Marketing",
+      "description": "We create engaging visual content—posts, reels, and stories—that connect with your audience and boost your brand."
     },
     "solution6": {
-      "title": "Automatización de Procesos y Chatbots",
-      "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplificá tareas repetitivas con tecnología inteligente."
+      "title": "Automation and Chatbots",
+      "description": "We implement automated workflows with bots for customer service, lead generation, or internal management. Simplify repetitive tasks with intelligent technology."
     }
   },
   "InteractiveDemo": {
     "title": "Try Hello Galaxy",
-    "description": "Discover how our technology simplifies customer service and enhances your team's efficiency."
+    "description": "Discover how our technology simplifies customer service and improves your team’s efficiency."
   },
   "FeatureHighlight": {
-    "title": "Why Choose Hello Galaxy",
-    "description": "Our solutions stand out for their simplicity, efficiency, and adaptability.",
+    "title": "Why choose Hello Galaxy",
+    "description": "Our solutions stand out for their simplicity, effectiveness, and adaptability.",
     "feature1": {
-      "title": "Total Personalization",
-      "description": "Configure the chatbot to meet your business's specific needs."
+      "title": "Full customization",
+      "description": "Configure the chatbot to meet your business’s specific needs."
     },
     "feature2": {
-      "title": "Clear and Flexible Pricing",
+      "title": "Clear and flexible pricing",
       "description": "Choose a plan that fits the size and needs of your operation."
     },
     "feature3": {
-      "title": "Guaranteed Scalability",
-      "description": "Cover from 1,000 to 100,000 conversations per month, adapting to your business growth."
+      "title": "Guaranteed scalability",
+      "description": "Covers from 1,000 to 100,000 conversations per month, adapting to your business’s growth."
     },
     "feature4": {
-      "title": "Complete Integration",
+      "title": "Complete integration",
       "description": "Easily connect with Meta, Google Sheets, and Chatwoot to optimize every interaction."
     }
   },
-  "Pricing": {
-    "title": "Affordable and Adaptable Plans",
-    "description": "Our plans are designed to suit businesses of all sizes.",
-    "buttonText": "Contact Us",
-    "plan1": {
-      "title": "Basic Plan",
-      "description": "Ideal for small businesses starting with automated customer service.",
-      "price": "$250 USD",
-      "features": {
-        "1": "1,000 monthly conversations",
-        "2": "Customizable chatbot",
-        "3": "Integration with Google Sheets",
-        "4": "Basic technical support"
-      }
-    },
-    "plan2": {
-      "title": "Advanced Plan",
-      "description": "Perfect for growing businesses.",
-      "price": "$399 USD",
-      "features": {
-        "1": "3,000 monthly conversations",
-        "2": "Advanced AI chatbot",
-        "3": "Custom workflows",
-        "4": "Integration with Chatwoot"
-      }
-    },
-    "plan3": {
-      "title": "Custom Plan",
-      "description": "Solutions tailored to businesses with specific needs.",
-      "price": "Custom",
-      "features": {
-        "1": "Unlimited interactions",
-        "2": "Advanced automation",
-        "3": "Priority support",
-        "4": "Custom integration"
-      }
-    }
+  "TerminalAI": {
+    "title": "Try our AI-powered chat to get to know us",
+    "description": "Ask me about our services, solutions, or projects",
+    "thinking": "🤔 Thinking...",
+    "errorMessage": "Sorry, I encountered an error. Please try again."
   },
   "CallToAction": {
-    "title": "Ready to Simplify Customer Service?",
-    "description": "Start today and transform how you manage your business.",
-    "startButton": "Get Started Now",
-    "contactButton": "Contact Us"
+    "title": "Ready to make a big impact on your business?",
+    "description": "Contact us and let’s drive your business’s digital transformation together",
+    "startButton": "Contact us"
   },
   "metadata": {
-    "title": "Hello Galaxy: Intelligent Customer Service",
-    "description": "Simplify and optimize customer service with AI and WhatsApp.",
-    "keywords": "AI, WhatsApp, automation, customer service, Google Sheets, Chatwoot",
-    "ogTitle": "Hello Galaxy: Intelligent Customer Service",
-    "ogDescription": "Improve efficiency and boost business growth with our integrated solutions.",
-    "twitterDescription": "Simplify and optimize customer service with AI and WhatsApp."
+    "title": "Hello Galaxy: We digitize your business",
+    "description": "We are a comprehensive web design and development team capable of growing your business in the digital world",
+    "keywords": "AI, WhatsApp, automation, web pages, marketing, customer service, Google Sheets, Chatwoot",
+    "ogTitle": "Hello Galaxy: We digitize your business",
+    "ogDescription": "Improve your business’s sales processes and online presence",
+    "twitterDescription": "Improve your business’s sales processes and online presence"
+  },
+  "Footer": {
+    "description": "Whe create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus.",
+    "contactUs": "Contact us",
+    "schedules": "Schedules",
+    "monday": "Monday",
+    "friday": "Friday",
+    "to": "to"
   }
 }

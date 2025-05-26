@@ -3,7 +3,7 @@ import { petsloveApp, carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinet
 export const projects = (t: (s: string) => string) => {
   return [
     {
-      name: 'Deville Argentona',
+      name: 'Deville Argentina',
       description: t('project1.description'),
       tags: [
         {
@@ -61,29 +61,8 @@ export const projects = (t: (s: string) => string) => {
       appLink: 'https://app.range.org/',
     },
     {
-      name: 'Deville Argentina',
-      description: t('project1.description'),
-      tags: [
-        {
-          name: 'Shopify',
-          color: 'bg-teal-500',
-        },
-        {
-          name: 'HTML',
-          color: 'bg-cyan-500',
-        },
-        {
-          name: 'CSS',
-          color: 'bg-blue-500',
-        },
-      ],
-      image: deville,
-      appLink: 'https://devilleargentina.com.ar/',
-      sourceCodeLink: null,
-    },
-    {
       name: 'Antoinette Bone',
-      description: t('project2.description'),
+      description: t('project3.description'),
       tags: [
         {
           name: 'Antoinette Bone',
@@ -108,7 +87,7 @@ export const projects = (t: (s: string) => string) => {
     },
     {
       name: 'Carpinteria Robaina',
-      description: t('project2.description'),
+      description: t('project4.description'),
       tags: [
         {
           name: 'NextJs',
@@ -129,7 +108,7 @@ export const projects = (t: (s: string) => string) => {
     },
     {
       name: `Chatbot AI`,
-      description: t('project4.description'),
+      description: t('project5.description'),
       tags: [
         {
           name: 'NextJs',
@@ -170,11 +149,11 @@ export const projects = (t: (s: string) => string) => {
       ],
       image: aiChatbot,
       sourceCodeLink: '',
-      appLink: 'https://www.hellogalaxy.dev/es-ES',
+      appLink: 'https://landing-page-ai-woad.vercel.app/en-US',
     },
     {
       name: `Pet's love`,
-      description: t('project3.description'),
+      description: t('project6.description'),
       tags: [
         {
           name: 'ViteJs',

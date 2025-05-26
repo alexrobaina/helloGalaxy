@@ -16,17 +16,12 @@ export const CallToAction: React.FC = () => {
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4">
           <a
-            href="#get-started"
-            className="bg-white flex items-center justify-center  text-indigo-600 px-6 py-2 rounded-lg text-sm font-semibold shadow-md hover:bg-indigo-100 transition"
+            href="https://wa.me/541138997032"
+            className="bg-white flex items-center justify-center text-indigo-600 px-6 py-2 rounded-lg text-sm font-semibold shadow-md hover:bg-indigo-100 transition"
           >
             {t('startButton')}
           </a>
-          <a
-            href="#contact-us"
-            className="bg-transparent border-2 border-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-white hover:text-indigo-600 transition"
-          >
-            {t('contactButton')}
-          </a>
+         
         </div>
       </div>
     </footer>

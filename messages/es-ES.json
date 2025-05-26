@@ -1,46 +1,34 @@
 {
   "Hero": {
-    "title": "Simplifica la atención al cliente con IA y WhatsApp",
-    "description": "Transforma cómo interactúas con tus clientes integrando herramientas inteligentes que optimizan tu negocio y potencian tus resultados. Lleva tu negocio al siguiente nivel con Hello Galaxy.",
-    "startButton": "Empieza ahora",
-    "exploreButton": "Conoce más"
+    "title": "Inovación y escalabilidad. Bienvenidos a Hello Galaxy",
+    "description": "Uniendo tecnología y creatividad para construir el futuro.",
+    "startButton": "Explora nuestras soluciones"
   },
-  "projects": {
-    "title": "Mi portfolio",
-    "description": "Proyectos",
-    "description2": "Los siguientes proyectos muestran mi habilidad y experiencia a través de ejemplos de mi trabajo en el mundo real. Puedes ver cada proyecto en producción. Refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.",
-    "project1": {
-        "description": "Una plataforma web que permite a los usuarios monitorear y analizar transacciones entre cadenas de bloques en Solana IBC. Desarrollado usando Next.js, GraphQL y Tailwind, este proyecto muestra mi expertise en la creación de aplicaciones web complejas y de alto rendimiento con un enfoque en la tecnología blockchain"
-    },
-    "project2": {
-        "description": "Una aplicación web que sirve para crear alertas y monitorear diferentes redes de bloques, monederos de criptomonedas y ofrece una gran cantidad de análisis y monitoreo de transacciones."
-    },
-    "project3": {
-        "description": "Una plataforma para amantes de los animales a encontrar y compartir información sobre animales, incluyendo adopción, entrenamiento y consejos de cuidado. Gestiona veterinarios y tiendas de animales."
-    },
-    "project4": {
-        "description": "Un chatbot AI que permite a los usuarios chatear con un chatbot y obtener respuestas a sus preguntas sobre la empresa y los servicios que ofrece."
-    }
+ "projects": {
+  "description": "Proyectos",
+  "description2": "Los siguientes proyectos muestran la experiencia a través de ejemplos del trabajo que hacemos en el mundo real. Cada proyecto en producción refleja nuestra capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.",
+  "project1": {
+    "description": "Desarrollamos la tienda Deville Argentina en Shopify: organizamos el material, creamos categorías e implementamos diversos métodos de pago para ofrecer una experiencia de compra segura y eficiente ya!"
+  },
+  "project2": {
+    "description": "Range es una plataforma que permite crear alertas y supervisar múltiples redes blockchain y monederos de criptomonedas en tiempo real con análisis transaccionales detallados e informes personalizados."
+  },
+  "project3": {
+    "description": "Creamos la landing page de la abogada Antoninette Bone con un diseño profesional y usabilidad optimizada que destaca sus servicios legales, genera confianza y facilita la captación de nuevos clientes."
+  },
+  "project4": {
+    "description": "Desarrollamos la landing page de Carpintería Robaina: creamos contenido persuasivo, optimizamos el SEO e integramos tecnologías avanzadas y dinámicas para resaltar sus servicios y atraer clientes hoy."
+  },
+  "project5": {
+    "description": "Desarrollamos la landing page para Chatbot AI: diseñamos una interfaz intuitiva, desplegamos el bot para ofrecer atención automatizada 24/7 y maximizar la conversión de visitantes en clientes online!"
+  },
+  "project6": {
+    "description": "Creamos Pet’s Love, una plataforma para apasionados de los animales que facilita adopciones, comparte consejos de cuidado y conecta con veterinarios online para garantizar el bienestar de tu mascota"
+  }
 },
-  "PainPointsBlock": {
-    "title": "Resuelve los desafíos de atención al cliente",
-    "description": "Hello Galaxy ofrece soluciones diseñadas para superar los retos más comunes en la interacción con clientes.",
-    "paintPoint1": {
-      "title": "Respuestas rápidas y personalizadas",
-      "description": "Atiende a tus clientes al instante, ofreciendo información precisa y soporte eficiente en todo momento."
-    },
-    "paintPoint2": {
-      "title": "Optimización del tiempo",
-      "description": "Automatiza tareas repetitivas y dedica más tiempo a estrategias que impulsen el crecimiento de tu negocio."
-    },
-    "paintPoint3": {
-      "title": "Integración sin complicaciones",
-      "description": "Conecta WhatsApp, Google Sheets y Chatwoot para gestionar conversaciones, almacenar datos y mejorar la experiencia del cliente."
-    }
-  },
   "SolutionShowcase": {
     "title": "Soluciones simples y eficaces",
-    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
+    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI. Te adyudamos a digitalizar tu negocio y a ser más eficaz con tus datos en la nube.",
     "solution1": {
       "title": "Diseño y Desarrollo Web",
       "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
@@ -50,7 +38,7 @@
       "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
     },
     "solution3": {
-      "title": "Infraestructura y Datos en la Nube",
+      "title": "Infraestructura en la Nube",
       "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery, AWS."
     },
     "solution4": {
@@ -62,7 +50,7 @@
       "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca."
     },
     "solution6": {
-      "title": "Automatización de Procesos y Chatbots",
+      "title": "Automatización y Chatbots",
       "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplificá tareas repetitivas con tecnología inteligente."
     }
   },
@@ -90,56 +78,37 @@
       "description": "Conecta fácilmente con Meta, Google Sheets y Chatwoot para optimizar cada interacción."
     }
   },
-  "Pricing": {
-    "title": "Planes accesibles y adaptables",
-    "description": "Nuestros planes están diseñados para ajustarse a empresas de todos los tamaños.",
-    "buttonText": "Contactanos",
-    "plan1": {
-      "title": "Plan Básico",
-      "description": "Ideal para pequeños negocios que inician con la atención automatizada.",
-      "price": "$250 USD",
-      "features": {
-        "1": "1,000 conversaciones mensuales",
-        "2": "Chatbot personalizable",
-        "3": "Integración con Google Sheets",
-        "4": "Soporte técnico básico"
-      }
-    },
-    "plan2": {
-      "title": "Plan Avanzado",
-      "description": "Perfecto para empresas en crecimiento.",
-      "price": "$399 USD",
-      "features": {
-        "1": "3,000 conversaciones mensuales",
-        "2": "Chatbot avanzado con IA",
-        "3": "Flujos personalizados",
-        "4": "Integración con Chatwoot"
-      }
-    },
-    "plan3": {
-      "title": "Plan Personalizado",
-      "description": "Soluciones adaptadas a empresas con necesidades específicas.",
-      "price": "A medida",
-      "features": {
-        "1": "Interacciones ilimitadas",
-        "2": "Automatización avanzada",
-        "3": "Soporte prioritario",
-        "4": "Integración personalizada"
-      }
-    }
-  },
   "CallToAction": {
-    "title": "¿Listo para simplificar la atención al cliente?",
-    "description": "Empieza hoy mismo y transforma cómo gestionas tu negocio.",
-    "startButton": "Contratar ahora",
-    "contactButton": "Habla con nosotros"
+    "title": "¿Listos para generar un gran impacto en tu negocio?",
+    "description": "Contactanos y desarrollemos juntos la digitalización de tu negocio",
+    "startButton": "Contratar ahora"
+  },
+  "Navbar": {
+    "solutions": "Soluciones",
+    "projects": "Proyectos",
+    "contact": "Contactanos",
+    "chat": "Chat IA"
+  },
+  "TerminalAI" : {
+    "title": "Juaga con nuestro Chat IA",
+    "description" : "Preguntale sobre nosotros.",
+    "thinking": "Pensando...",
+    "errorMessage": "Lo siento, encontré un error. Por favor, intenta de nuevo."
   },
   "metadata": {
-    "title": "Hello Galaxy: Atención al Cliente Inteligente",
-    "description": "Simplifica y optimiza la atención al cliente con IA y WhatsApp.",
-    "keywords": "IA, WhatsApp, automatización, atención al cliente, Google Sheets, Chatwoot",
-    "ogTitle": "Hello Galaxy: Atención al Cliente Inteligente",
-    "ogDescription": "Mejora la eficiencia y potencia el crecimiento de tu negocio con nuestras soluciones integradas.",
-    "twitterDescription": "Simplifica y optimiza la atención al cliente con IA y WhatsApp."
+    "title": "Hello Galaxy: Digitalizamos tu negocio",
+    "description": "Somos un equipo integral de diseño y desarrollo web capacitado para hacer crecer tu negocio en el mundo digital",
+    "keywords": "IA, WhatsApp, automatización, Paginas web, Marketing, atención al cliente, Google Sheets, Chatwoot",
+    "ogTitle": "Hello Galaxy: Digitalizamos tu negocio",
+    "ogDescription": "Mejora los procesos de venta y la imagen en internet de tu negocio",
+    "twitterDescription": "Mejora los procesos de venta y la imagen en internet de tu negocio"
+  },
+  "Footer": {
+    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
+    "contactUs": "Contáctanos",
+    "schedules": " Horarios",
+    "monday": "Lunes",
+    "friday": "Viernes",
+    "to": "a"
   }
 }

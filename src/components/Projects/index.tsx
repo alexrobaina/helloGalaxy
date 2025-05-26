@@ -6,7 +6,7 @@ import { ProjectCard } from './components/ProjectCard'
 import { useTranslations } from 'next-intl'
 
 export const Projects = () => {
-  const t = useTranslations('projects') // Moved here
+  const t = useTranslations('projects') 
 
   return (
     <section id="projects" className="py-20 px-6 md:px-12 bg-gray-950 overflow-hidden">
