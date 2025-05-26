@@ -94,7 +94,7 @@ export const SolutionShowcase: React.FC = () => {
   
 
   return (
-    <section className="py-20 px-6 md:px-6 bg-gray-950 overflow-hidden">
+    <section id='solutions' className="py-20 px-6 md:px-6 bg-gray-950 overflow-hidden">
       <motion.div
         className="container mx-auto"
         initial="hidden"

@@ -19,7 +19,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="fixed right-0 top-0 mr-4 inline-block text-left">
+    <div className="fixed right-0 top-4 mr-4 inline-block text-left p-2 justify-center md:justify-end">
       <div>
         <button
           type="button"

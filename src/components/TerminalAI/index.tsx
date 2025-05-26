@@ -9,7 +9,7 @@ export const TerminalAI: FC = () => {
 
   return (
     <section
-      id="pain-points"
+      id="chat"
       className="py-20 px-6 md:px-12 bg-gradient-to-b from-gray-950 to-gray-950"
     >
       <div className="container mx-auto">
