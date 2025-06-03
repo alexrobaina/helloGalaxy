@@ -3,7 +3,6 @@ import github from './github.png'
 import creator from './creator.png'
 import mobile from './mobile.png'
 import web from './web.png'
-import backend from './backend.png'
 import landingPagePetslove from './landing-page-petslove.png'
 import petsloveApp from './petsloveApp.png'
 import picassoExporer from './picassoExporer.png'
@@ -25,7 +24,6 @@ export {
   antoinetteBone,
   github,
   mobile,
-  backend,
   creator,
   deville,
   rangeApp,

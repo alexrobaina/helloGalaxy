@@ -1,8 +1,11 @@
 {
   "Hero": {
     "title": "Inovación y escalabilidad. Bienvenidos a Hello Galaxy",
-    "description": "Uniendo tecnología y creatividad para construir el futuro.",
+    "description": "Construyendo tecnología con propósito.",
     "startButton": "Explora nuestras soluciones"
+  },
+  "CodeCommands": {
+    "commandPrint": "Imagina y creamoslo."
   },
  "projects": {
   "description": "Proyectos",
@@ -88,6 +91,9 @@
     "projects": "Proyectos",
     "contact": "Contactanos",
     "chat": "Chat IA"
+  },
+  "LogoCarrousel": {
+    "title": "Trabajamos con las mejores tecnologías"
   },
   "TerminalAI" : {
     "title": "Juaga con nuestro Chat IA",

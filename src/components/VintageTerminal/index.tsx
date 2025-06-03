@@ -19,7 +19,7 @@ export const VintageTerminal = () => {
   const [hasShownWelcome, setHasShownWelcome] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
-  const promptLabel = 'helloGalaxy@my-machine:~$';
+  const promptLabel = 'hg@my-machine:~$';
   const params = useParams();
   const [isLoading, setLoading] = useState(false)
   const t = useTranslations("TerminalAI")
@@ -103,7 +103,7 @@ export const VintageTerminal = () => {
       handleCommand(command, language);
       setCurrentInput('');
     }
-  }, [currentInput, language, isLoading]);
+  }, [currentInput, language, isLoading, handleCommand]);
 
   const handleTerminalClick = () => {
     textareaRef.current?.focus();
@@ -144,7 +144,10 @@ export const VintageTerminal = () => {
       <div
         ref={terminalRef}
         onClick={handleTerminalClick}
-        className="w-full max-w-4xl h-[500px] my-2 sm:my-8 bg-black text-violet-500  p-2 sm:p-4 border-2 border-violet-800 rounded-2xl shadow-[0_0_15px_rgba(147,51,234,0.3)] cursor-text overflow-y-auto scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-gray-900"
+        className={`w-full max-w-4xl h-[500px] my-2 sm:my-8 bg-black 
+          text-violet-500 p-2 sm:p-4 border-2 border-violet-800 rounded-2xl 
+          shadow-[0_0_15px_rgba(147,51,234,0.3)] cursor-text overflow-y-auto 
+          scrollbar-thin scrollbar-thumb-violet-500 scrollbar-track-gray-900`}
       >
         <div className="flex flex-col gap-1 text-left">
           {history.map((line, idx) => (
@@ -153,16 +156,16 @@ export const VintageTerminal = () => {
               className={`flex transition-opacity duration-300 ${line.isTyping ? 'animate-typewriter' : ''}`}
             >
               {line.prompt && (
-                <span className="text-violet-500 shrink-0">{line.prompt}&nbsp;</span>
+                <span className="text-violet-500 shrink-0 text-xs md:text-sm">{line.prompt}&nbsp;</span>
               )}
-              <span className="text-gray-50 whitespace-pre-wrap break-words">{line.command}</span>
+              <span className="text-gray-50 whitespace-pre-wrap break-words text-xs md:text-sm">{line.command}</span>
             </div>
           ))}
 
           {/* Current input line */}
           <div className="flex items-start">
             {!isLoading && (
-              <span className="text-violet-500 shrink-0">{promptLabel}&nbsp;</span>
+              <span className="text-violet-500 shrink-0 text-xs md:text-sm">{promptLabel}&nbsp;</span>
             )}
             <textarea
               rows={1}
@@ -170,7 +173,7 @@ export const VintageTerminal = () => {
               value={currentInput}
               onKeyDown={handleKeyDown}
               onChange={handleChangeChat}
-              className="bg-black text-gray-50 border-none outline-none resize-none w-full p-0 overflow-hidden"
+              className="bg-black text-gray-50 border-none outline-none resize-none w-full p-0 overflow-hidden text-xs md:text-sm"
             />
           </div>
         </div>

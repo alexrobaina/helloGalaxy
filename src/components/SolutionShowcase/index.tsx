@@ -103,7 +103,7 @@ export const SolutionShowcase: React.FC = () => {
         variants={containerVariants}
       >
         <motion.div
-          className="text-center mb-12"
+          className="sm:text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -124,7 +124,7 @@ export const SolutionShowcase: React.FC = () => {
               <div className="absolute inset-0 rounded-4xl blur-xl opacity-50 group-hover:opacity-100 transition-all duration-500 shadow-3xl shadow-indigo-800" />
 
               {/* Card */}
-              <motion.div className="relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm h-[350px] shadow-2xl shadow-indigo-500/55 transition-all duration-500">
+              <motion.div className="md:h-[360px] relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm shadow-2xl shadow-indigo-500/55 transition-all duration-500">
                 {/* Animation container */}
                 <div className="h-[150px] flex items-center justify-center filter saturate-150">
                   <LottieAnimation width={solution.width} animation={solution.animation} />

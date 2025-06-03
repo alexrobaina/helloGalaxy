@@ -1,14 +1,20 @@
 {
   "Hero": {
     "title": "Innovation and scalability. Welcome to Hello Galaxy",
-    "description": "Uniting technology and creativity to build the future.",
+    "description": "Building meaningful technology",
     "startButton": "Explore our solutions"
+  },
+  "CodeCommands": {
+    "commandPrint": "Make magic happen."
   },
   "Navbar": {
     "solutions": "Solutions",
     "projects": "Projects",
     "contact": "Contact us",
     "chat": "Chat IA"
+  },
+  "LogoCarrousel": {
+    "title": "We work with the best technologies"
   },
   "projects": {
     "description": "Projects",
@@ -36,7 +42,7 @@
     "title": "Simple and effective solutions",
     "description": "We create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus. We help you digitize your business and make your cloud data more efficient.",
     "solution1": {
-      "title": "Web Design and Development",
+      "title": "Web Design development",
       "description": "Personalize your customer service with AI-powered bots that answer questions, provide technical support, and facilitate sales."
     },
     "solution2": {

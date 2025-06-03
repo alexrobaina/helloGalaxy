@@ -39,7 +39,6 @@ export default async function LocaleLayout({ children, params }: RootLayoutProps
   return (
     <html lang={locale}>
       <body className="bg-cyan-950">
-       
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
         <ToastContainer />
       </body>

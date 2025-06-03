@@ -24,7 +24,7 @@ export const Hero: FC = () => {
     <section className="bg-gradient-to-b flex-col justify-center items-center from-cyan-950 to-gray-950 md:px-12 flex h-screen px-4">
       <div className="container flex flex-col md:flex-row justify-center z-10 ">
         <div className="max-w-6xl items-center text-center md:text-left flex flex-col gap-4">
-          <h1 className="text-4xl flex flex-col text-slate-100 text-balance md:text-6xl font-bold text-center leading-tight sm:mb-4">
+          <h1 className="text-3xl sm:text-4xl flex flex-col text-slate-100 text-balance md:text-6xl font-bold text-center leading-tight sm:mb-4">
             <span>{t('title')}</span>
           </h1>
           <p className="text-lg text-slate-100 md:text-xl mb-6 text-balance text-center">
@@ -32,7 +32,7 @@ export const Hero: FC = () => {
           </p>
           <div className="flex flex-col md:flex-row gap-4">
             <a
-              href="#pricing"
+              href="#solutions"
               className="bg-indigo-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-slate-600 transition"
             >
               {t('startButton')}

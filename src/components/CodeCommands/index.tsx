@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl';
 import { FC } from 'react';
 import { Bounce, toast } from 'react-toastify';
 
@@ -6,23 +9,25 @@ interface CodeCommandsProps {
 }
 
 export const CodeCommands: FC<CodeCommandsProps> = ({ text }) => {
+  const t  = useTranslations('CodeCommands');
+
   const handleCopy = () => {
     navigator.clipboard.writeText(text);
-    toast("🦄 Let's build something amazing!", {
+    toast(`🦄 ${t('commandPrint')}`, {
       position: 'bottom-right',
       autoClose: 5000,
       style: {
         background: '#8E51FF',
         color: '#fff',
-        fontSize: '1.2rem',
+        fontSize: '1rem',
         fontWeight: 'bold',
         textAlign: 'center',
         fontFamily: 'monospace',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '80px',
+        height: '65px',
         padding: '6px',
-        width: '420px',
+        width: '260px',
         borderRadius: '2px',
         boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.5)',
       },
