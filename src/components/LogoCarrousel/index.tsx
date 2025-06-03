@@ -5,8 +5,10 @@ import { SiGooglecloud } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaAws } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { AiOutlinePython } from "react-icons/ai";
 import { FaNode } from "react-icons/fa";
 import { TbBrandPrisma } from "react-icons/tb";
+import { SiFigma } from "react-icons/si";
 
 import { FC } from 'react';
 
@@ -43,4 +45,6 @@ const logoData = [
   { icon: <FaReact color='white' size={40} /> , text: 'React' },
   { icon: <TbBrandPrisma color='white' size={40} /> , text: 'Prisma' },
   { icon: <BiLogoPostgresql color='white' size={40} /> , text: 'PostgreSQL' },
+  { icon: <SiFigma color='white' size={40} /> , text: 'Figma' },
+  { icon: <AiOutlinePython color='white' size={40} /> , text: 'Python' },
   ]
