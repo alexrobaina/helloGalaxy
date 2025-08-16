@@ -1,120 +1,121 @@
 {
-  "Hero": {
-    "title": "Innovation and scalability. Welcome to Hello Galaxy",
-    "description": "Building meaningful technology",
-    "startButton": "Explore our solutions"
-  },
-  "CodeCommands": {
-    "commandPrint": "Make magic happen."
-  },
-  "Navbar": {
-    "solutions": "Solutions",
-    "projects": "Projects",
-    "contact": "Contact us",
-    "chat": "Chat IA"
-  },
-  "LogoCarrousel": {
-    "title": "We work with the best technologies"
-  },
-  "projects": {
-    "description": "Projects",
-    "description2": "The following projects showcase our expertise through real-world examples of the work we do. Each production project reflects our ability to solve complex problems, work with diverse technologies, and manage projects effectively.",
-    "project1": {
-      "description": "We built the Deville Argentina Shopify store: organized the content, created categories, and implemented various payment methods to deliver a secure and efficient shopping experience now!"
+    "Hero": {
+        "title": "Innovating at scale. Welcome to Hello Galaxy",
+        "description": "Transforming ideas into impactful technology.",
+        "startButton": "Discover our solutions"
     },
-    "project2": {
-      "description": "Range is a platform that lets you create alerts and monitor multiple blockchain networks and cryptocurrency wallets in real time, with detailed transaction analysis and customized reports."
+
+    "CodeCommands": {
+        "commandPrint": "Make magic happen."
     },
-    "project3": {
-      "description": "We created the landing page for attorney Antoninette Bone, featuring a professional design and optimized usability that highlights her legal services, builds trust, and streamlines new client acquisition."
+    "Navbar": {
+        "solutions": "Solutions",
+        "projects": "Projects",
+        "contact": "Contact us",
+        "chat": "AI Chat"
     },
-    "project4": {
-      "description": "We developed the Carpintería Robaina landing page: created persuasive content, optimized SEO, and integrated advanced, dynamic technologies to showcase their services and attract clients today."
+    "LogoCarrousel": {
+        "title": "We work with the best technologies"
     },
-    "project5": {
-      "description": "We developed the Chatbot AI landing page: crafted an intuitive interface, deployed the bot for 24/7 automated support, and maximized visitor-to-customer conversion online."
+    "projects": {
+        "description": "Projects",
+        "description2": "These projects showcase our expertise through real-world examples. Each one in production demonstrates our ability to solve complex problems, work with diverse technologies, and manage projects effectively.",
+        "project1": {
+            "description": "We built the Deville Argentina Shopify store: organized the content, created categories, and implemented multiple payment methods to deliver a secure and efficient shopping experience."
+        },
+        "project2": {
+            "description": "Range is a platform that enables creating alerts and monitoring multiple blockchain networks and cryptocurrency wallets in real time, with detailed transaction analysis and customized reports."
+        },
+        "project3": {
+            "description": "We created the landing page for attorney Antoninette Bone, featuring a professional design and optimized usability that highlights her legal services, builds trust, and facilitates new client acquisition."
+        },
+        "project4": {
+            "description": "We developed the Carpintería Robaina landing page: produced persuasive content, optimized SEO, and integrated advanced, dynamic technologies to showcase their services and attract clients."
+        },
+        "project5": {
+            "description": "We designed the Chatbot AI landing page: crafted an intuitive interface, deployed the bot for 24/7 automated support, and maximized visitor-to-customer conversion."
+        },
+        "project6": {
+            "description": "We created Pet’s Love, a platform for animal lovers that facilitates adoptions, shares care tips, and connects users with online veterinarians to ensure their pets’ well-being."
+        }
     },
-    "project6": {
-      "description": "We created Pet’s Love, a platform for animal lovers that streamlines adoptions, shares care tips, and connects you with online veterinarians to ensure your pet’s well-being."
+    "SolutionShowcase": {
+        "title": "Simple and effective solutions",
+        "description": "We create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus. We help you digitize your business and optimize your cloud data usage.",
+        "solution1": {
+            "title": "Web Design & Development",
+            "description": "Personalize your customer service with AI-powered bots that answer questions, provide technical support, and drive sales."
+        },
+        "solution2": {
+            "title": "Custom Web Applications",
+            "description": "We develop scalable, secure web solutions to automate processes, manage data, and improve operational efficiency."
+        },
+        "solution3": {
+            "title": "Cloud Infrastructure",
+            "description": "We configure your cloud infrastructure and organize your data using tools like Google Sheets, Firestore, BigQuery, and AWS."
+        },
+        "solution4": {
+            "title": "Online Stores",
+            "description": "We launch your e-commerce on platforms like Shopify and Tiendanube, integrating design, payments, and custom features."
+        },
+        "solution5": {
+            "title": "Instagram Marketing",
+            "description": "We create engaging visual content—posts, reels, and stories—that connect with your audience and strengthen your brand."
+        },
+        "solution6": {
+            "title": "Automation & Chatbots",
+            "description": "We implement automated workflows with bots for customer service, lead generation, or internal management. Simplify repetitive tasks with intelligent technology."
+        }
+    },
+    "InteractiveDemo": {
+        "title": "Try Hello Galaxy",
+        "description": "Discover how our technology enhances customer service and improves your team’s efficiency."
+    },
+    "FeatureHighlight": {
+        "title": "Why Choose Hello Galaxy",
+        "description": "Our solutions stand out for their simplicity, effectiveness, and adaptability.",
+        "feature1": {
+            "title": "Full customization",
+            "description": "Configure the chatbot to meet your business’s specific needs."
+        },
+        "feature2": {
+            "title": "Clear and flexible pricing",
+            "description": "Choose a plan that fits the size and demands of your operation."
+        },
+        "feature3": {
+            "title": "Guaranteed scalability",
+            "description": "Handle from 1,000 to 100,000 conversations per month, adapting to your business’s growth."
+        },
+        "feature4": {
+            "title": "Complete integration",
+            "description": "Easily connect with Meta, Google Sheets, and Chatwoot to optimize every interaction."
+        }
+    },
+    "TerminalAI": {
+        "title": "Try our AI-powered chat to get to know us",
+        "description": "Ask about our services, solutions, or projects.",
+        "thinking": "Thinking...",
+        "errorMessage": "Sorry, I encountered an error. Please try again."
+    },
+    "CallToAction": {
+        "title": "Ready to accelerate your business growth?",
+        "description": "Let’s create powerful digital solutions together and take your business to the next level.",
+        "startButton": "Start now"
+    },
+    "metadata": {
+        "title": "Hello Galaxy: We digitize your business",
+        "description": "We are a comprehensive web design and development team ready to grow your business in the digital world.",
+        "keywords": "AI, WhatsApp, automation, websites, marketing, customer service, Google Sheets, Chatwoot",
+        "ogTitle": "Hello Galaxy: We digitize your business",
+        "ogDescription": "Improve your business’s sales processes and online presence.",
+        "twitterDescription": "Improve your business’s sales processes and online presence."
+    },
+    "Footer": {
+        "description": "We create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus.",
+        "contactUs": "Contact us",
+        "schedules": "Schedules",
+        "monday": "Monday",
+        "friday": "Friday",
+        "to": "to"
     }
-  },
-  "SolutionShowcase": {
-    "title": "Simple and effective solutions",
-    "description": "We create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus. We help you digitize your business and make your cloud data more efficient.",
-    "solution1": {
-      "title": "Web Design development",
-      "description": "Personalize your customer service with AI-powered bots that answer questions, provide technical support, and facilitate sales."
-    },
-    "solution2": {
-      "title": "Custom Web Applications",
-      "description": "We develop scalable, secure web solutions to automate processes, manage data, and improve operational efficiency."
-    },
-    "solution3": {
-      "title": "Cloud Infrastructure",
-      "description": "We configure your cloud infrastructure and organize your data using tools like Google Sheets, Firestore, BigQuery, and AWS."
-    },
-    "solution4": {
-      "title": "Online Stores",
-      "description": "We launch your e-commerce on platforms like Shopify and Tiendanube, integrating design, payments, and custom features."
-    },
-    "solution5": {
-      "title": "Instagram Marketing",
-      "description": "We create engaging visual content—posts, reels, and stories—that connect with your audience and boost your brand."
-    },
-    "solution6": {
-      "title": "Automation and Chatbots",
-      "description": "We implement automated workflows with bots for customer service, lead generation, or internal management. Simplify repetitive tasks with intelligent technology."
-    }
-  },
-  "InteractiveDemo": {
-    "title": "Try Hello Galaxy",
-    "description": "Discover how our technology simplifies customer service and improves your team’s efficiency."
-  },
-  "FeatureHighlight": {
-    "title": "Why choose Hello Galaxy",
-    "description": "Our solutions stand out for their simplicity, effectiveness, and adaptability.",
-    "feature1": {
-      "title": "Full customization",
-      "description": "Configure the chatbot to meet your business’s specific needs."
-    },
-    "feature2": {
-      "title": "Clear and flexible pricing",
-      "description": "Choose a plan that fits the size and needs of your operation."
-    },
-    "feature3": {
-      "title": "Guaranteed scalability",
-      "description": "Covers from 1,000 to 100,000 conversations per month, adapting to your business’s growth."
-    },
-    "feature4": {
-      "title": "Complete integration",
-      "description": "Easily connect with Meta, Google Sheets, and Chatwoot to optimize every interaction."
-    }
-  },
-  "TerminalAI": {
-    "title": "Try our AI-powered chat to get to know us",
-    "description": "Ask me about our services, solutions, or projects",
-    "thinking": "🤔 Thinking...",
-    "errorMessage": "Sorry, I encountered an error. Please try again."
-  },
-  "CallToAction": {
-    "title": "Ready to make a big impact on your business?",
-    "description": "Contact us and let’s drive your business’s digital transformation together",
-    "startButton": "Contact us"
-  },
-  "metadata": {
-    "title": "Hello Galaxy: We digitize your business",
-    "description": "We are a comprehensive web design and development team capable of growing your business in the digital world",
-    "keywords": "AI, WhatsApp, automation, web pages, marketing, customer service, Google Sheets, Chatwoot",
-    "ogTitle": "Hello Galaxy: We digitize your business",
-    "ogDescription": "Improve your business’s sales processes and online presence",
-    "twitterDescription": "Improve your business’s sales processes and online presence"
-  },
-  "Footer": {
-    "description": "Whe create modern, responsive, results-driven websites. From landing pages to full portals, always with a UX/UI focus.",
-    "contactUs": "Contact us",
-    "schedules": "Schedules",
-    "monday": "Monday",
-    "friday": "Friday",
-    "to": "to"
-  }
 }

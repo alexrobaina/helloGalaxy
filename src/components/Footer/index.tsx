@@ -20,6 +20,7 @@ export const Footer: FC = () => {
             <h3 className="text-xl font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-gray-200">
               <li>📍 Mendoza, Godoy Cruz, Argentina</li>
+              <li>📍 Buenos Aires, Argentina</li>
               <li className="hover:text-white cursor-pointer">
                 <a href="https://wa.me/541138997032">📞 +54 11 3899-70-32</a>
               </li>
@@ -29,7 +30,8 @@ export const Footer: FC = () => {
                   <div className="flex items-center">Instagram</div>
                 </a>
               </li>
-              <li className="hover:text-white">✉️ info.hellogalaxy@gmail.com</li>
+              <li className="hover:text-white">✉️ team@hellogalaxy.dev</li>
+              <li className="hover:text-white">✉️ info@hellogalaxy.dev</li>
             </ul>
           </div>
           <div>

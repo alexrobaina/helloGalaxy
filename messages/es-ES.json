@@ -1,120 +1,127 @@
 {
-  "Hero": {
-    "title": "Inovación y escalabilidad. Bienvenidos a Hello Galaxy",
-    "description": "Construyendo tecnología con propósito.",
-    "startButton": "Explora nuestras soluciones"
-  },
-  "CodeCommands": {
-    "commandPrint": "Imagina y creamoslo."
-  },
- "projects": {
-  "description": "Proyectos",
-  "description2": "Los siguientes proyectos muestran la experiencia a través de ejemplos del trabajo que hacemos en el mundo real. Cada proyecto en producción refleja nuestra capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.",
-  "project1": {
-    "description": "Desarrollamos la tienda Deville Argentina en Shopify: organizamos el material, creamos categorías e implementamos diversos métodos de pago para ofrecer una experiencia de compra segura y eficiente ya!"
-  },
-  "project2": {
-    "description": "Range es una plataforma que permite crear alertas y supervisar múltiples redes blockchain y monederos de criptomonedas en tiempo real con análisis transaccionales detallados e informes personalizados."
-  },
-  "project3": {
-    "description": "Creamos la landing page de la abogada Antoninette Bone con un diseño profesional y usabilidad optimizada que destaca sus servicios legales, genera confianza y facilita la captación de nuevos clientes."
-  },
-  "project4": {
-    "description": "Desarrollamos la landing page de Carpintería Robaina: creamos contenido persuasivo, optimizamos el SEO e integramos tecnologías avanzadas y dinámicas para resaltar sus servicios y atraer clientes hoy."
-  },
-  "project5": {
-    "description": "Desarrollamos la landing page para Chatbot AI: diseñamos una interfaz intuitiva, desplegamos el bot para ofrecer atención automatizada 24/7 y maximizar la conversión de visitantes en clientes online!"
-  },
-  "project6": {
-    "description": "Creamos Pet’s Love, una plataforma para apasionados de los animales que facilita adopciones, comparte consejos de cuidado y conecta con veterinarios online para garantizar el bienestar de tu mascota"
-  }
-},
-  "SolutionShowcase": {
-    "title": "Soluciones simples y eficaces",
-    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI. Te adyudamos a digitalizar tu negocio y a ser más eficaz con tus datos en la nube.",
-    "solution1": {
-      "title": "Diseño y Desarrollo Web",
-      "description": "Personaliza tu atención al cliente con bots impulsados por IA que responden preguntas, brindan soporte técnico y facilitan ventas."
+    "Hero": {
+        "title": "Innovación y escalabilidad. Bienvenidos a Hello Galaxy",
+        "description": "Creamos tecnología con propósito.",
+        "startButton": "Explora nuestras soluciones"
     },
-    "solution2": {
-      "title": "Aplicaciones Web a Medida",
-      "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
+    "CodeCommands": {
+        "commandPrint": "Imagina y créalo."
     },
-    "solution3": {
-      "title": "Infraestructura en la Nube",
-      "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery, AWS."
+
+    "projects": {
+        "description": "Proyectos",
+        "description2": "Estos proyectos reflejan nuestra experiencia a través de ejemplos reales. Cada uno en producción demuestra nuestra capacidad para resolver problemas complejos, trabajar con diversas tecnologías y gestionar proyectos con eficacia.",
+        "project1": {
+            "description": "Desarrollamos la tienda Deville Argentina en Shopify: organizamos el contenido, creamos categorías e implementamos múltiples métodos de pago para ofrecer una experiencia de compra segura y eficiente."
+        },
+        "project2": {
+            "description": "Range es una plataforma que permite generar alertas y monitorear múltiples redes blockchain y monederos de criptomonedas en tiempo real, con análisis transaccionales detallados e informes personalizados."
+        },
+        "project3": {
+            "description": "Creamos la landing page de la abogada Antoninette Bone con un diseño profesional y una usabilidad optimizada que destaca sus servicios legales, genera confianza y facilita la captación de nuevos clientes."
+        },
+        "project4": {
+            "description": "Desarrollamos la landing page de Carpintería Robaina: elaboramos contenido persuasivo, optimizamos el SEO e integramos tecnologías avanzadas y dinámicas para resaltar sus servicios y atraer clientes."
+        },
+        "project5": {
+            "description": "Diseñamos la landing page para Chatbot AI: creamos una interfaz intuitiva, desplegamos el bot para brindar atención automatizada 24/7 y maximizar la conversión de visitantes en clientes."
+        },
+        "project6": {
+            "description": "Creamos Pet’s Love, una plataforma para amantes de los animales que facilita adopciones, comparte consejos de cuidado y conecta con veterinarios online para garantizar el bienestar de tu mascota."
+        }
     },
-    "solution4": {
-      "title": "Tiendas Online",
-      "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+
+    "SolutionShowcase": {
+        "title": "Soluciones simples y eficaces",
+        "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI. Te ayudamos a digitalizar tu negocio y optimizar el uso de tus datos en la nube.",
+        "solution1": {
+            "title": "Diseño y Desarrollo Web",
+            "description": "Personaliza la atención al cliente con bots impulsados por IA que respondan preguntas, brinden soporte técnico y faciliten ventas."
+        },
+        "solution2": {
+            "title": "Aplicaciones Web a Medida",
+            "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
+        },
+        "solution3": {
+            "title": "Infraestructura en la Nube",
+            "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore, BigQuery o AWS."
+        },
+        "solution4": {
+            "title": "Tiendas Online",
+            "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+        },
+        "solution5": {
+            "title": "Marketing en Instagram",
+            "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conecten con tu audiencia y fortalezcan tu marca."
+        },
+        "solution6": {
+            "title": "Automatización y Chatbots",
+            "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplifica tareas repetitivas con tecnología inteligente."
+        }
     },
-    "solution5": {
-      "title": "Marketing en Instagram",
-      "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca."
+    "InteractiveDemo": {
+        "title": "Prueba Hello Galaxy",
+        "description": "Descubre cómo nuestra tecnología optimiza la atención al cliente y mejora la eficiencia de tu equipo."
     },
-    "solution6": {
-      "title": "Automatización y Chatbots",
-      "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplificá tareas repetitivas con tecnología inteligente."
+    "FeatureHighlight": {
+        "title": "Por qué elegir Hello Galaxy",
+        "description": "Nuestras soluciones destacan por su simplicidad, eficacia y adaptabilidad.",
+        "feature1": {
+            "title": "Personalización total",
+            "description": "Configura el chatbot según las necesidades específicas de tu negocio."
+        },
+        "feature2": {
+            "title": "Precios claros y flexibles",
+            "description": "Elige un plan que se ajuste al tamaño y las demandas de tu operación."
+        },
+        "feature3": {
+            "title": "Escalabilidad garantizada",
+            "description": "Gestiona desde 1.000 hasta 100.000 conversaciones al mes, adaptándote al crecimiento de tu negocio."
+        },
+        "feature4": {
+            "title": "Integración completa",
+            "description": "Conecta fácilmente con Meta, Google Sheets y Chatwoot para optimizar cada interacción."
+        }
+    },
+    "CallToAction": {
+        "title": "¿Listos para generar un gran impacto en tu negocio?",
+        "description": "Contactanos y desarrollemos juntos la digitalización de tu negocio",
+        "startButton": "Contratar ahora"
+    },
+    "CallToAction": {
+        "title": "¿Listos para generar un gran impacto en tu negocio?",
+        "description": "Contáctanos y desarrollemos juntos la digitalización de tu empresa.",
+        "startButton": "Contratar ahora"
+    },
+    "Navbar": {
+        "solutions": "Soluciones",
+        "projects": "Proyectos",
+        "contact": "Contáctanos",
+        "chat": "Chat IA"
+    },
+    "LogoCarrousel": {
+        "title": "Trabajamos con las mejores tecnologías"
+    },
+    "TerminalAI": {
+        "title": "Juega con nuestro Chat IA",
+        "description": "Pregúntale sobre nosotros.",
+        "thinking": "Pensando...",
+        "errorMessage": "Lo siento, encontré un error. Por favor, inténtalo de nuevo."
+    },
+    "metadata": {
+        "title": "Hello Galaxy: Digitalizamos tu negocio",
+        "description": "Somos un equipo integral de diseño y desarrollo web, listo para hacer crecer tu negocio en el mundo digital.",
+        "keywords": "IA, WhatsApp, automatización, páginas web, marketing, atención al cliente, Google Sheets, Chatwoot",
+        "ogTitle": "Hello Galaxy: Digitalizamos tu negocio",
+        "ogDescription": "Mejora los procesos de venta y la presencia en internet de tu negocio.",
+        "twitterDescription": "Mejora los procesos de venta y la presencia en internet de tu negocio."
+    },
+    "Footer": {
+        "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
+        "contactUs": "Contáctanos",
+        "schedules": "Horarios",
+        "monday": "Lunes",
+        "friday": "Viernes",
+        "to": "a"
     }
-  },
-  "InteractiveDemo": {
-    "title": "Prueba Hello Galaxy",
-    "description": "Descubre cómo nuestra tecnología simplifica la atención al cliente y mejora la eficiencia de tu equipo."
-  },
-  "FeatureHighlight": {
-    "title": "Por qué elegir Hello Galaxy",
-    "description": "Nuestras soluciones destacan por su simplicidad, eficacia y adaptabilidad.",
-    "feature1": {
-      "title": "Personalización total",
-      "description": "Configura el chatbot para atender a las necesidades específicas de tu negocio."
-    },
-    "feature2": {
-      "title": "Precios claros y flexibles",
-      "description": "Elige un plan que se ajuste al tamaño y las necesidades de tu operación."
-    },
-    "feature3": {
-      "title": "Escalabilidad garantizada",
-      "description": "Cubre desde 1,000 hasta 100,000 conversaciones al mes, adaptándote al crecimiento de tu negocio."
-    },
-    "feature4": {
-      "title": "Integración completa",
-      "description": "Conecta fácilmente con Meta, Google Sheets y Chatwoot para optimizar cada interacción."
-    }
-  },
-  "CallToAction": {
-    "title": "¿Listos para generar un gran impacto en tu negocio?",
-    "description": "Contactanos y desarrollemos juntos la digitalización de tu negocio",
-    "startButton": "Contratar ahora"
-  },
-  "Navbar": {
-    "solutions": "Soluciones",
-    "projects": "Proyectos",
-    "contact": "Contactanos",
-    "chat": "Chat IA"
-  },
-  "LogoCarrousel": {
-    "title": "Trabajamos con las mejores tecnologías"
-  },
-  "TerminalAI" : {
-    "title": "Juaga con nuestro Chat IA",
-    "description" : "Preguntale sobre nosotros.",
-    "thinking": "Pensando...",
-    "errorMessage": "Lo siento, encontré un error. Por favor, intenta de nuevo."
-  },
-  "metadata": {
-    "title": "Hello Galaxy: Digitalizamos tu negocio",
-    "description": "Somos un equipo integral de diseño y desarrollo web capacitado para hacer crecer tu negocio en el mundo digital",
-    "keywords": "IA, WhatsApp, automatización, Paginas web, Marketing, atención al cliente, Google Sheets, Chatwoot",
-    "ogTitle": "Hello Galaxy: Digitalizamos tu negocio",
-    "ogDescription": "Mejora los procesos de venta y la imagen en internet de tu negocio",
-    "twitterDescription": "Mejora los procesos de venta y la imagen en internet de tu negocio"
-  },
-  "Footer": {
-    "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
-    "contactUs": "Contáctanos",
-    "schedules": " Horarios",
-    "monday": "Lunes",
-    "friday": "Viernes",
-    "to": "a"
-  }
 }
