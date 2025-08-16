@@ -1,4 +1,4 @@
-import { petsloveApp, carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinetteBone } from '@/assets/images'
+import { petsloveApp, carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinetteBone, soulConnection } from '@/assets/images'
 
 export const projects = (t: (s: string) => string) => {
   return [
@@ -23,6 +23,49 @@ export const projects = (t: (s: string) => string) => {
       appLink: 'https://devilleargentina.com.ar/',
       sourceCodeLink: null,
     },
+    {
+      image: soulConnection, 
+      name: 'Soul Connection',
+      description: t('project7.description'),
+      tags: [
+        {
+          name: 'NextJs',
+          color: 'bg-yellow-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        
+        {
+          name: 'Tailwind',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'i18N',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'NodeJs',
+          color: 'bg-green-500',
+        },
+        {
+          name: 'OpenAI',
+          color: 'bg-violet-500',
+        },
+       
+        {
+          name: 'Prisma',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Postgresql',
+          color: 'bg-fuchsia-500',
+        },
+      ],
+      appLink: 'https://soul-connection.vercel.app/',
+      sourceCodeLink: null,
+    }, 
     {
       image: rangeApp,
       name: 'Range',

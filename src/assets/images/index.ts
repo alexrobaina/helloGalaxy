@@ -16,6 +16,7 @@ import aiChatbot from './aiChatbot.png'
 import deville from './deville.png'
 import antoinetteBone from './theLaw.png'
 import carpinteriaRobaina from './carpinteriaRobaina.png'
+import soulConnection from './soul-connection.png'
 
 export {
   web,
@@ -36,4 +37,5 @@ export {
   MobileIllustration,
   landingPagePetslove,
   ComputerIllustration2,
+  soulConnection,
 }

@@ -28,6 +28,9 @@
         },
         "project6": {
             "description": "Creamos Pet’s Love, una plataforma para amantes de los animales que facilita adopciones, comparte consejos de cuidado y conecta con veterinarios online para garantizar el bienestar de tu mascota."
+        },
+        "project7": {
+            "description": "Una aplicación web que ayuda a las parejas a fortalecer su relación mediante conversaciones guiadas por IA y apoyo emocional. Ofrece una experiencia cálida y centrada en las personas, diseñada para mejorar la comunicación y la conexión afectiva."
         }
     },
 
@@ -86,11 +89,6 @@
     "CallToAction": {
         "title": "¿Listos para generar un gran impacto en tu negocio?",
         "description": "Contactanos y desarrollemos juntos la digitalización de tu negocio",
-        "startButton": "Contratar ahora"
-    },
-    "CallToAction": {
-        "title": "¿Listos para generar un gran impacto en tu negocio?",
-        "description": "Contáctanos y desarrollemos juntos la digitalización de tu empresa.",
         "startButton": "Contratar ahora"
     },
     "Navbar": {
