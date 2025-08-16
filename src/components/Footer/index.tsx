@@ -1,7 +1,7 @@
 'use client'
 
 import { FC } from "react";
-import { TbBrandInstagram } from "react-icons/tb";
+import { TbBrandInstagram, TbBrandLinkedin } from "react-icons/tb";
 import { useTranslations } from "next-intl";
 
 export const Footer: FC = () => {
@@ -24,10 +24,14 @@ export const Footer: FC = () => {
               <li className="hover:text-white cursor-pointer">
                 <a href="https://wa.me/541138997032">📞 +54 11 3899-70-32</a>
               </li>
-              <li className="hover:text-white cursor-pointer">
+              <li className="flex gap-4 hover:text-white cursor-pointer">
                 <a className="flex gap-1 items-center cursor-pointer" target="_blank" href="https://www.instagram.com/hellogalaxy.sf">
                   <TbBrandInstagram size={22}/>
                   <div className="flex items-center">Instagram</div>
+                </a>
+                <a className="flex gap-1 items-center cursor-pointer" target="_blank" href="https://www.linkedin.com/company/hellogalaxy">
+                  <TbBrandLinkedin size={22}/>
+                  <div className="flex items-center">Linkedin</div>
                 </a>
               </li>
               <li className="hover:text-white">✉️ team@hellogalaxy.dev</li>
