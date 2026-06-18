@@ -1,5 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { buttonVariants } from '@/components/ui';
+import { cn } from '@/lib/cn';
 
 export const CallToAction: React.FC = () => {
   const t = useTranslations('CallToAction');
@@ -17,7 +19,7 @@ export const CallToAction: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-4">
           <a
             href="https://wa.me/541138997032"
-            className="bg-white flex items-center justify-center text-indigo-600 px-6 py-2 rounded-lg text-sm font-semibold shadow-md hover:bg-indigo-100 transition"
+            className={cn(buttonVariants({ variant: 'brandInverse', size: 'md' }), 'px-6')}
           >
             {t('startButton')}
           </a>

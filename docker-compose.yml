@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: hellogalaxy-postgres
+    restart: unless-stopped
+    # Host port 5544 -> container 5432 (5432/5433/5434 are used by other apps)
+    ports:
+      - '5544:5432'
+    environment:
+      POSTGRES_USER: hellogalaxy
+      POSTGRES_PASSWORD: hellogalaxy
+      POSTGRES_DB: hellogalaxy
+    volumes:
+      - hellogalaxy_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U hellogalaxy -d hellogalaxy']
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  hellogalaxy_pgdata:

@@ -9,21 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
     "i18next": "^24.0.2",
     "lottie-react": "^2.4.0",
+    "lucide-react": "^1.18.0",
     "next": "~15.0.3",
     "next-intl": "^3.25.3",
+    "pg": "^8.21.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-i18next": "^15.1.2",
     "react-icons": "^5.5.0",
     "react-tilt": "^1.0.2",
     "react-toastify": "^11.0.5",
-    "react-vertical-timeline-component": "^3.5.3"
+    "react-vertical-timeline-component": "^3.5.3",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
+    "@types/pg": "^8.20.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "eslint": "^9.15.0",

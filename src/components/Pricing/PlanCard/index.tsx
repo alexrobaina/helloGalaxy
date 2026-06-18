@@ -1,4 +1,6 @@
 import { FC } from 'react';
+import { buttonVariants } from '@/components/ui';
+import { cn } from '@/lib/cn';
 
 interface PlanCardProps {
   title: string;
@@ -42,7 +44,7 @@ export const PlanCard: FC<PlanCardProps> = ({
     </ul>
     <a
       href={buttonLink}
-      className="w-full bg-violet-500 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-violet-600 transition"
+      className={cn(buttonVariants({ variant: 'brandViolet', size: 'lg' }), 'w-full text-lg')}
     >
       {buttonText}
     </a>
