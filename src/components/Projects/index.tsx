@@ -1,34 +1,40 @@
-'use client'
-import { motion } from 'framer-motion'
-import { fadeIn, textVariant } from '@/utils/motion'
-import { projects } from './contants'
-import { ProjectCard } from './components/ProjectCard'
-import { useTranslations } from 'next-intl'
+'use client';
 
-export const Projects = () => {
-  const t = useTranslations('projects') 
+import { FC } from 'react';
+import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
+import { projects } from './contants';
+import { ProjectCard } from './components/ProjectCard';
+
+/**
+ * Portfolio presented as evidence, not decoration: every card links out to a
+ * live production URL, which is the strongest proof we have while there are no
+ * client testimonials to show.
+ */
+export const Projects: FC = () => {
+  const t = useTranslations('projects');
 
   return (
-    <section id="projects" className="py-20 px-6 md:px-12 bg-gray-950 overflow-hidden">
-        <motion.div className="flex gap-4 flex-col w-full" variants={textVariant()}>
-          <h2 className={`text-3xl md:text-4xl text-slate-50 font-bold`}>
-            {t('description')}
-          </h2>
-        </motion.div>
-        <div className="w-full flex justify-start">
-          <motion.p
-            variants={fadeIn('', '', 0.1, 1)}
-            className="text-purple-50 mt-8 text-base text-[17px] max-w-4xl flex justify-center"
-          >
-            {t('description2')}
-          </motion.p>
+    <section id="projects" className="section section-divider bg-surface">
+      <div className="container-content">
+        <div className="max-w-3xl">
+          <p className="eyebrow">{t('eyebrow')}</p>
+          <h2 className="heading-2 mt-3">{t('title')}</h2>
+          <p className="lead">{t('description2')}</p>
         </div>
-        <div className="mt-20 flex flex-wrap gap-7 justify-between">
-          {projects(t).map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
-        </div>
-    </section>
-  )
-}
 
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: '-80px' }}
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.08 } } }}
+          className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        >
+          {projects(t).map((project, index) => (
+            <ProjectCard key={project.name} index={index} {...project} />
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+};

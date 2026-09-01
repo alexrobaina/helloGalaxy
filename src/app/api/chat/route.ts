@@ -20,7 +20,7 @@ async function fetchWithTimeout(resource: RequestInfo, options: RequestInit = {}
 
 export async function POST(req: NextRequest) {
   // 1. Rate limiting
-  const rlResponse = await rateLimitMiddleware(req);
+  const rlResponse = await rateLimitMiddleware(req, { name: 'chat', limit: 5, windowMs: 60_000 });
   if (rlResponse) return rlResponse;
 
   try {

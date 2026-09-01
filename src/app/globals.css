@@ -1,10 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
   scroll-behavior: smooth;
+  /* Offset anchor jumps so the fixed navbar never covers a section heading. */
+  scroll-padding-top: 5rem;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, 'Segoe UI', Roboto,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer components {
+  /* --- Section rhythm primitives -------------------------------------- */
+  /* Every landing section uses .section so vertical spacing is consistent
+     and the page reads as one system rather than stacked one-offs. */
+  .section {
+    @apply relative px-6 py-20 md:px-12 md:py-28;
+  }
+
+  .container-content {
+    @apply mx-auto w-full max-w-6xl;
+  }
+
+  /* Hairline separator between sections that share a background. */
+  .section-divider {
+    @apply border-t border-white/[0.07];
+  }
+
+  /* --- Typography scale ------------------------------------------------ */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-brand-300;
+  }
+
+  .heading-2 {
+    @apply text-balance text-3xl font-bold leading-[1.15] text-slate-50 md:text-[2.6rem];
+  }
+
+  .lead {
+    @apply mt-4 max-w-2xl text-balance text-base leading-relaxed text-slate-400 md:text-lg;
+  }
+
+  /* --- Surfaces -------------------------------------------------------- */
+  .card-surface {
+    @apply rounded-2xl border border-white/10 bg-card/80 backdrop-blur-sm transition-colors duration-300;
+  }
+
+  .card-surface-hover {
+    @apply hover:border-brand-400/50 hover:bg-card;
+  }
 }

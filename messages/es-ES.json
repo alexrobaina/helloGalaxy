@@ -1,16 +1,32 @@
 {
     "Hero": {
-        "title": "Innovación y escalabilidad. Bienvenidos a Hello Galaxy",
-        "description": "Creamos tecnología con propósito.",
-        "startButton": "Explora nuestras soluciones"
+        "eyebrow": "Estudio de producto · Argentina + EE. UU.",
+        "title": "Convertimos tu idea en software que funciona",
+        "titleAccent": "y que vende.",
+        "description": "Somos un equipo completo de producto: diseño, desarrollo, IA y nube. Desde una web que te trae clientes hasta una aplicación a medida. Primer entregable en 2 semanas, sin contratos eternos.",
+        "primaryCta": "Contanos tu proyecto",
+        "secondaryCta": "Ver trabajos reales",
+        "stats": {
+            "projects": {
+                "value": "6+",
+                "label": "proyectos en producción"
+            },
+            "delivery": {
+                "value": "2 semanas",
+                "label": "hasta el primer entregable"
+            },
+            "reply": {
+                "value": "24 h",
+                "label": "para responderte"
+            }
+        }
     },
     "CodeCommands": {
         "commandPrint": "Imagina y créalo."
     },
-
     "projects": {
         "description": "Proyectos",
-        "description2": "Estos proyectos reflejan nuestra experiencia a través de ejemplos reales. Cada uno en producción demuestra nuestra capacidad para resolver problemas complejos, trabajar con diversas tecnologías y gestionar proyectos con eficacia.",
+        "description2": "Cada uno de estos productos está online y funcionando hoy. Entrá a verlos: es la forma más honesta que tenemos de mostrarte cómo trabajamos.",
         "project1": {
             "description": "Desarrollamos la tienda Deville Argentina en Shopify: organizamos el contenido, creamos categorías e implementamos múltiples métodos de pago para ofrecer una experiencia de compra segura y eficiente."
         },
@@ -18,7 +34,7 @@
             "description": "Range es una plataforma que permite generar alertas y monitorear múltiples redes blockchain y monederos de criptomonedas en tiempo real, con análisis transaccionales detallados e informes personalizados."
         },
         "project3": {
-            "description": "Creamos la landing page de la abogada Antoninette Bone con un diseño profesional y una usabilidad optimizada que destaca sus servicios legales, genera confianza y facilita la captación de nuevos clientes."
+            "description": "Creamos la landing page de la abogada Antoinette Bone con un diseño profesional y una usabilidad optimizada que destaca sus servicios legales, genera confianza y facilita la captación de nuevos clientes."
         },
         "project4": {
             "description": "Desarrollamos la landing page de Carpintería Robaina: elaboramos contenido persuasivo, optimizamos el SEO e integramos tecnologías avanzadas y dinámicas para resaltar sus servicios y atraer clientes."
@@ -26,41 +42,50 @@
         "project5": {
             "description": "Diseñamos la landing page para Chatbot AI: creamos una interfaz intuitiva, desplegamos el bot para brindar atención automatizada 24/7 y maximizar la conversión de visitantes en clientes."
         },
-        "project6": {
-            "description": "Creamos Pet’s Love, una plataforma para amantes de los animales que facilita adopciones, comparte consejos de cuidado y conecta con veterinarios online para garantizar el bienestar de tu mascota."
+        "eyebrow": "Trabajos",
+        "title": "Proyectos en producción, no maquetas",
+        "viewProject": "Ver proyecto",
+        "openInNewTab": "se abre en una pestaña nueva",
+        "sourceCode": "código fuente",
+        "mitaller": {
+            "description": "Mi Taller es nuestro SaaS de gestión para talleres mecánicos. Documenta cada trabajo con inspecciones guiadas, fotos categorizadas, firmas digitales y reportes en PDF, y reúne órdenes de trabajo, clientes, inventario y facturación en un solo lugar."
         },
-        "project7": {
-            "description": "Una aplicación web que ayuda a las parejas a fortalecer su relación mediante conversaciones guiadas por IA y apoyo emocional. Ofrece una experiencia cálida y centrada en las personas, diseñada para mejorar la comunicación y la conexión afectiva."
-        }
+        "imageAlt": "{name}, proyecto desarrollado por Hello Galaxy"
     },
-
     "SolutionShowcase": {
-        "title": "Soluciones simples y eficaces",
-        "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI. Te ayudamos a digitalizar tu negocio y optimizar el uso de tus datos en la nube.",
-        "solution1": {
-            "title": "Diseño y Desarrollo Web",
-            "description": "Personaliza la atención al cliente con bots impulsados por IA que respondan preguntas, brinden soporte técnico y faciliten ventas."
+        "eyebrow": "Qué hacemos",
+        "title": "Cuatro cosas, y las hacemos bien",
+        "description": "Un solo equipo se encarga del diseño, el código y el despliegue. Sin intermediarios y sin tener que explicar lo mismo tres veces.",
+        "apps": {
+            "title": "Aplicaciones web y móviles a medida",
+            "description": "Construimos el producto completo: desde el primer wireframe hasta la app en producción, escalable y segura.",
+            "item1": "Producto y UX/UI",
+            "item2": "Next.js · React · Node",
+            "item3": "Despliegue y monitoreo"
         },
-        "solution2": {
-            "title": "Aplicaciones Web a Medida",
-            "description": "Desarrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa."
+        "web": {
+            "title": "Sitios web que convierten",
+            "description": "Webs rápidas y bien posicionadas, pensadas para que el visitante haga algo: escribirte, comprar o reservar.",
+            "item1": "SEO técnico y local",
+            "item2": "Core Web Vitals",
+            "item3": "Captación de leads"
         },
-        "solution3": {
-            "title": "Infraestructura en la Nube",
-            "description": "Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore, BigQuery o AWS."
+        "ai": {
+            "title": "Automatización e IA",
+            "description": "Asistentes y flujos automáticos que se hacen cargo de lo repetitivo y responden a tus clientes las 24 horas.",
+            "item1": "Chatbots con IA",
+            "item2": "Integraciones y webhooks",
+            "item3": "WhatsApp y CRM"
         },
-        "solution4": {
-            "title": "Tiendas Online",
-            "description": "Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas."
+        "cloud": {
+            "title": "Nube y datos",
+            "description": "Infraestructura que aguanta el crecimiento y datos ordenados, para que decidas mirando números y no intuiciones.",
+            "item1": "AWS · Google Cloud",
+            "item2": "PostgreSQL · BigQuery",
+            "item3": "Dashboards y reportes"
         },
-        "solution5": {
-            "title": "Marketing en Instagram",
-            "description": "Creamos contenido visual atractivo: publicaciones, reels y stories que conecten con tu audiencia y fortalezcan tu marca."
-        },
-        "solution6": {
-            "title": "Automatización y Chatbots",
-            "description": "Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna. Simplifica tareas repetitivas con tecnología inteligente."
-        }
+        "alsoLabel": "También hacemos:",
+        "alsoItems": "tiendas online en Shopify y Tiendanube, y contenido para redes sociales."
     },
     "InteractiveDemo": {
         "title": "Prueba Hello Galaxy",
@@ -87,39 +112,168 @@
         }
     },
     "CallToAction": {
-        "title": "¿Listos para generar un gran impacto en tu negocio?",
-        "description": "Contactanos y desarrollemos juntos la digitalización de tu negocio",
-        "startButton": "Contratar ahora"
+        "title": "¿Listo para empezar?",
+        "description": "Diagnóstico gratuito de 30 minutos, sin compromiso.",
+        "startButton": "Contanos tu proyecto",
+        "whatsapp": "WhatsApp"
     },
     "Navbar": {
-        "solutions": "Soluciones",
+        "solutions": "Servicios",
+        "process": "Proceso",
         "projects": "Proyectos",
-        "contact": "Contáctanos",
-        "chat": "Chat IA"
+        "chat": "Chat IA",
+        "contact": "Contacto",
+        "websites": "Webs por rubro",
+        "primary": "Navegación principal",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú"
     },
     "LogoCarrousel": {
-        "title": "Trabajamos con las mejores tecnologías"
+        "title": "El stack con el que construimos"
     },
     "TerminalAI": {
-        "title": "Juega con nuestro Chat IA",
-        "description": "Pregúntale sobre nosotros.",
+        "eyebrow": "Probalo vos",
+        "title": "Hablá con nuestro asistente de IA",
+        "description": "Está entrenado con nuestra información. Preguntale qué hacemos, cómo trabajamos o cómo encarar tu proyecto — es el mismo tipo de asistente que construimos para nuestros clientes.",
         "thinking": "Pensando...",
         "errorMessage": "Lo siento, encontré un error. Por favor, inténtalo de nuevo."
     },
     "metadata": {
-        "title": "Hello Galaxy: Digitalizamos tu negocio",
-        "description": "Somos un equipo integral de diseño y desarrollo web, listo para hacer crecer tu negocio en el mundo digital.",
-        "keywords": "IA, WhatsApp, automatización, páginas web, marketing, atención al cliente, Google Sheets, Chatwoot",
-        "ogTitle": "Hello Galaxy: Digitalizamos tu negocio",
-        "ogDescription": "Mejora los procesos de venta y la presencia en internet de tu negocio.",
-        "twitterDescription": "Mejora los procesos de venta y la presencia en internet de tu negocio."
+        "title": "Hello Galaxy — Desarrollo web, apps a medida e IA",
+        "description": "Estudio de producto: diseñamos y construimos sitios web, aplicaciones a medida, automatizaciones con IA e infraestructura en la nube. Primer entregable en 2 semanas.",
+        "keywords": "desarrollo web, aplicaciones a medida, software factory, automatización, inteligencia artificial, chatbots, Next.js, nube, SEO local, Argentina",
+        "ogTitle": "Hello Galaxy — Desarrollo web, apps a medida e IA",
+        "ogDescription": "Diseño, desarrollo, IA y nube en un solo equipo. Contanos tu proyecto y te respondemos en 24 horas.",
+        "twitterDescription": "Diseño, desarrollo, IA y nube en un solo equipo. Contanos tu proyecto y te respondemos en 24 horas."
     },
     "Footer": {
-        "description": "Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.",
-        "contactUs": "Contáctanos",
+        "description": "Estudio de producto. Diseñamos y construimos software a medida, sitios web y automatizaciones con IA para negocios de Latinoamérica y Estados Unidos.",
+        "navLabel": "Secciones",
+        "contactUs": "Contacto",
         "schedules": "Horarios",
         "monday": "Lunes",
         "friday": "Viernes",
-        "to": "a"
+        "to": "a",
+        "rights": "Todos los derechos reservados.",
+        "builtWith": "Hecho con Next.js en Argentina."
+    },
+    "AudienceSplit": {
+        "eyebrow": "Por dónde empezar",
+        "title": "¿Cuál de estos dos sos?",
+        "description": "Trabajamos con dos tipos de clientes muy distintos. Elegí el camino que más se parece a tu situación y te mostramos exactamente cómo te ayudamos.",
+        "business": {
+            "title": "Tengo un negocio",
+            "summary": "Necesitás que la gente te encuentre en Google y te escriba. Presencia online que trae clientes, no un folleto digital.",
+            "bullet1": "Sitio web listo para vender en 2 semanas",
+            "bullet2": "SEO local y ficha de Google optimizada",
+            "bullet3": "WhatsApp y formularios que capturan cada consulta",
+            "cta": "Ver plantillas por rubro"
+        },
+        "product": {
+            "title": "Tengo un producto o una idea",
+            "summary": "Necesitás construir, escalar o modernizar una aplicación. Un equipo técnico que se hace cargo del producto entero.",
+            "bullet1": "Aplicaciones web y móviles a medida",
+            "bullet2": "IA y automatización integradas a tu operación",
+            "bullet3": "Infraestructura en la nube y datos ordenados",
+            "cta": "Ver cómo trabajamos"
+        }
+    },
+    "PainPoints": {
+        "eyebrow": "El punto de partida",
+        "title": "Si algo de esto te suena, podemos ayudarte",
+        "description": "No vendemos tecnología por la tecnología. Estos son los tres problemas con los que más nos llaman.",
+        "point1": {
+            "title": "Tu web está linda pero no trae clientes",
+            "description": "Recibe visitas y no genera consultas. Carga lenta, no aparece en Google y no hay un camino claro hacia el contacto.",
+            "outcome": "La rediseñamos alrededor de la conversión: velocidad, SEO y un llamado a la acción en cada pantalla."
+        },
+        "point2": {
+            "title": "Tu equipo pierde horas en tareas repetitivas",
+            "description": "Copiar datos entre planillas, responder las mismas diez preguntas, cargar pedidos a mano. Trabajo que no escala y desgasta.",
+            "outcome": "Automatizamos el flujo completo con integraciones y asistentes de IA."
+        },
+        "point3": {
+            "title": "Tu información está en cinco lugares distintos",
+            "description": "Planillas, WhatsApp, el sistema viejo y la cabeza de alguien. Tomar una decisión implica reconstruir el dato cada vez.",
+            "outcome": "Unificamos todo en una base sólida en la nube, con reportes que se actualizan solos."
+        }
+    },
+    "Process": {
+        "eyebrow": "Cómo trabajamos",
+        "title": "De la primera charla al lanzamiento, sin sorpresas",
+        "description": "Alcance cerrado, precio cerrado y entregas cada dos semanas. Ves avances reales durante todo el proyecto.",
+        "step1": {
+            "title": "Diagnóstico",
+            "duration": "30 minutos · gratis",
+            "description": "Nos contás qué necesitás. Salimos de la llamada con el problema bien definido y una idea clara del alcance."
+        },
+        "step2": {
+            "title": "Propuesta",
+            "duration": "48 horas",
+            "description": "Te enviamos alcance, plazo y precio cerrado por escrito. Si algo no te cierra, lo ajustamos antes de empezar."
+        },
+        "step3": {
+            "title": "Construcción",
+            "duration": "Entregas cada 2 semanas",
+            "description": "Trabajamos por sprints con un entorno de prueba siempre abierto. Ves el producto crecer y podés cambiar el rumbo."
+        },
+        "step4": {
+            "title": "Lanzamiento y soporte",
+            "duration": "Continuo",
+            "description": "Salimos a producción, medimos y seguimos mejorando. No desaparecemos después del deploy."
+        },
+        "cta": {
+            "title": "¿Empezamos por el diagnóstico?",
+            "description": "30 minutos, sin costo y sin compromiso.",
+            "button": "Agendar diagnóstico"
+        }
+    },
+    "Contact": {
+        "eyebrow": "Siguiente paso",
+        "title": "Contanos qué necesitás",
+        "description": "Respondemos todas las consultas en menos de 24 horas hábiles. Si preferís hablar, escribinos por WhatsApp y coordinamos una llamada.",
+        "whatsapp": "WhatsApp",
+        "emailLabel": "Email",
+        "hoursLabel": "Horarios",
+        "hoursValue": "Lunes a viernes, 9:00–18:00 (UTC-3)",
+        "note": "Atendemos clientes en Latinoamérica y Estados Unidos. Trabajamos en español e inglés, y facturamos en pesos o en dólares según te convenga.",
+        "formTitle": "Escribinos",
+        "formDescription": "Contanos en dos líneas qué querés construir. Te respondemos con próximos pasos concretos."
+    },
+    "LeadForm": {
+        "name": "Nombre",
+        "namePlaceholder": "Ana García",
+        "email": "Email",
+        "emailPlaceholder": "vos@tuempresa.com",
+        "business": "Empresa",
+        "businessPlaceholder": "Nombre de tu negocio",
+        "phone": "Teléfono",
+        "phonePlaceholder": "+54 11 1234-5678",
+        "trade": "Tu rubro",
+        "projectType": "Tipo de proyecto",
+        "select": "Elegí una opción…",
+        "other": "Otro",
+        "projectTypes": {
+            "website": "Sitio web",
+            "webapp": "Aplicación web o móvil",
+            "ecommerce": "Tienda online",
+            "automation": "Automatización e IA",
+            "cloud": "Nube y datos"
+        },
+        "message": "¿Qué necesitás?",
+        "messagePlaceholder": "Contanos brevemente sobre tu proyecto…",
+        "submit": "Enviar consulta",
+        "sending": "Enviando…",
+        "reassurance": "Sin spam ni compromiso. Respondemos en menos de 24 horas.",
+        "success": "¡Recibido! Te respondemos dentro de las próximas 24 horas. 🚀",
+        "errors": {
+            "rate_limited": "Enviaste varias consultas seguidas. Esperá unos minutos o escribinos por WhatsApp.",
+            "invalid_fields": "Revisá el nombre y el email: necesitamos un email válido.",
+            "invalid_json": "No pudimos leer el formulario. Recargá la página y probá de nuevo.",
+            "not_configured": "Nuestro sistema de contacto no está disponible ahora. Escribinos por WhatsApp a +54 11 3899-7032.",
+            "delivery_failed": "No pudimos registrar tu mensaje. Probá de nuevo o escribinos por WhatsApp.",
+            "network": "Error de conexión. Revisá tu internet y probá de nuevo.",
+            "unknown": "Algo salió mal. Probá de nuevo o escribinos por WhatsApp."
+        }
     }
 }

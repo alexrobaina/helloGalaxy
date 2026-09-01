@@ -5,7 +5,7 @@ import { tools } from '@/tools/registry';
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Free Online Tools — Hello Galaxy',
+    title: 'Free Online Tools',
     description:
       'A growing collection of fast, privacy-friendly online tools by Hello Galaxy. Convert files, automate small tasks and more.',
     alternates: { canonical: '/tools' },

@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const tpl = getTemplate(trade);
   if (!tpl) return {};
   return {
-    title: tpl.seo.title,
+    title: { absolute: tpl.seo.title },
     description: tpl.seo.description,
     keywords: tpl.seo.keywords,
     alternates: { canonical: `/websites/${tpl.slug}` },

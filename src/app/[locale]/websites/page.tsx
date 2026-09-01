@@ -18,7 +18,7 @@ import {
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Websites for Local Businesses — Built to Win You Jobs | Hello Galaxy',
+    title: 'Websites for Local Businesses — Built to Win You Jobs',
     description:
       'Professional, mobile-friendly websites for plumbers, electricians, carpenters and other local trades. Live in days, built to rank on Google and turn visitors into phone calls. See live demos.',
     keywords: [

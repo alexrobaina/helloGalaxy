@@ -1,147 +1,100 @@
 'use client';
 
+import { FC } from 'react';
 import { motion } from 'framer-motion';
-import { LottieAnimation } from '../LottieAnimations';
-import ecommerce from '../../../public/assets/Lottie/Ecommerce.json';
-import userInterface from '../../../public/assets/Lottie/interface.json';
-import softwareHarware from '../../../public/assets/Lottie/SoftwareHardware.json'
-import computer from '../../../public/assets/Lottie/computer.json'
-import automation from '../../../public/assets/Lottie/automation.json'
-import phone from '../../../public/assets/Lottie/phone.json'
 import { useTranslations } from 'next-intl';
+import { LottieAnimation } from '../LottieAnimations';
+import userInterface from '../../../public/assets/Lottie/interface.json';
+import softwareHardware from '../../../public/assets/Lottie/SoftwareHardware.json';
+import computer from '../../../public/assets/Lottie/computer.json';
+import automation from '../../../public/assets/Lottie/automation.json';
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const cardVariants = {
-  hidden: {
-    opacity: 0,
-    y: 50,
-    scale: 0.9,
-  },
-  visible: {
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      type: 'spring',
-      stiffness: 100,
-      damping: 12,
-    },
-  },
-  hover: {
-    scale: 1.02,
-    y: -5,
-    transition: {
-      type: 'spring',
-      stiffness: 400,
-      damping: 10,
-    },
-  },
-};
-
-export const SolutionShowcase: React.FC = () => {
+/**
+ * Four services, each stated as an outcome with the concrete deliverables
+ * underneath. The previous version listed six — mixing cloud infrastructure
+ * with Instagram marketing — which left no single message standing. The two
+ * dropped offerings survive as a secondary line below the grid.
+ */
+export const SolutionShowcase: FC = () => {
   const t = useTranslations('SolutionShowcase');
 
   const solutions = [
     {
-      width: 190,
-      animation: computer,
-      title: t('solution1.title'), // Diseño y Desarrollo Web
-      description: t('solution1.description'), // Creamos sitios web modernos, adaptables y orientados a resultados. Desde landing pages hasta portales completos, siempre con enfoque UX/UI.
-    },
-    {
-      width: 190,
+      key: 'apps',
       animation: userInterface,
-      title: t('solution2.title'), // Aplicaciones Web a Medida
-      description: t('solution2.description'), // Des arrollamos soluciones web escalables y seguras para automatizar procesos, gestionar datos y mejorar la eficiencia operativa.
+      width: 170,
+      deliverables: ['apps.item1', 'apps.item2', 'apps.item3'],
     },
     {
-      width: 230,
-      animation: softwareHarware,
-      title: t('solution3.title'), // Infraestructura y Datos en la Nube
-      description: t('solution3.description'), // Configuramos tu infraestructura en la nube y organizamos tus datos con herramientas como Google Sheets, Firestore o BigQuery.
+      key: 'web',
+      animation: computer,
+      width: 175,
+      deliverables: ['web.item1', 'web.item2', 'web.item3'],
     },
     {
-      // animation: ecommerceBuild,
-      width: 180,
-      animation: ecommerce,
-      title: t('solution4.title'), // Tiendas Online
-      description: t('solution4.description'), // Lanzamos tu e-commerce en plataformas como Shopify y Tiendanube, integrando diseño, pagos y funcionalidades personalizadas.
-    },
-    {
-      // animation: socialMediaMarketing,
-      width: 190,
-      animation: phone,
-      title: t('solution5.title'), // Marketing en Instagram
-      description: t('solution5.description'), // Creamos contenido visual atractivo: publicaciones, reels y stories que conectan con tu audiencia y potencian tu marca.
-    },
-    {
-      // animation: automationBots,
-      width: 220,
+      key: 'ai',
       animation: automation,
-      title: t('solution6.title'), // Automatización y Chatbots
-      description: t('solution6.description'), // Implementamos flujos automatizados con bots para atención al cliente, generación de leads o gestión interna.
+      width: 195,
+      deliverables: ['ai.item1', 'ai.item2', 'ai.item3'],
+    },
+    {
+      key: 'cloud',
+      animation: softwareHardware,
+      width: 200,
+      deliverables: ['cloud.item1', 'cloud.item2', 'cloud.item3'],
     },
   ];
-  
 
   return (
-    <section id='solutions' className="py-20 px-6 md:px-6 bg-gray-950 overflow-hidden">
-      <motion.div
-        className="container mx-auto"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: '-100px' }}
-        variants={containerVariants}
-      >
-        <motion.div
-          className="sm:text-center mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl md:text-4xl font-bold text-violet-50 ">{t('title')}</h2>
-          <p className="text-lg text-gray-300 mt-4 ">{t('description')}</p>
-        </motion.div>
+    <section id="solutions" className="section section-divider bg-surface">
+      <div className="container-content">
+        <div className="max-w-3xl">
+          <p className="eyebrow">{t('eyebrow')}</p>
+          <h2 className="heading-2 mt-3">{t('title')}</h2>
+          <p className="lead">{t('description')}</p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           {solutions.map((solution, index) => (
-            <motion.div
-              key={index}
-              whileHover="hover"
-              variants={cardVariants}
-              className="relative group"
+            <motion.article
+              key={solution.key}
+              initial={{ opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.55, delay: (index % 2) * 0.1, ease: [0.22, 1, 0.36, 1] }}
+              className="card-surface card-surface-hover flex flex-col overflow-hidden p-7 md:flex-row md:items-start md:gap-7 md:p-8"
             >
-              {/* Glow effect */}
-              <div className="absolute inset-0 rounded-4xl blur-xl opacity-50 group-hover:opacity-100 transition-all duration-500 shadow-3xl shadow-indigo-800" />
+              <div className="flex h-[130px] shrink-0 items-center justify-center md:w-[150px]">
+                <LottieAnimation width={solution.width} animation={solution.animation} />
+              </div>
 
-              {/* Card */}
-              <motion.div className="md:h-[360px] relative rounded-2xl bg-[#0D1019] ring-1 ring-indigo-400 p-6 text-center backdrop-blur-sm shadow-2xl shadow-indigo-500/55 transition-all duration-500">
-                {/* Animation container */}
-                <div className="h-[150px] flex items-center justify-center filter saturate-150">
-                  <LottieAnimation width={solution.width} animation={solution.animation} />
-                </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-semibold text-violet-50 mt-6 ">
-                  {solution.title}
+              <div className="mt-4 md:mt-0">
+                <h3 className="text-xl font-semibold text-slate-50">
+                  {t(`${solution.key}.title`)}
                 </h3>
-                <p className="text-gray-300 mt-4 leading-relaxed  text-sm">
-                  {solution.description}
+                <p className="mt-2.5 text-sm leading-relaxed text-slate-400">
+                  {t(`${solution.key}.description`)}
                 </p>
-              </motion.div>
-            </motion.div>
+                <ul className="mt-5 flex flex-wrap gap-2">
+                  {solution.deliverables.map((item) => (
+                    <li
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs text-slate-300"
+                    >
+                      {t(item)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.article>
           ))}
         </div>
-      </motion.div>
+
+        <p className="mt-8 text-sm text-slate-500">
+          {t('alsoLabel')}{' '}
+          <span className="text-slate-400">{t('alsoItems')}</span>
+        </p>
+      </div>
     </section>
   );
 };

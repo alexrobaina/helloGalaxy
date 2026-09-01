@@ -3,42 +3,105 @@
 import { FC } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { CodeCommands } from '../CodeCommands';
 import { buttonVariants } from '@/components/ui';
 import { cn } from '@/lib/cn';
 
+/**
+ * Above the fold the visitor must be able to answer three questions:
+ * what do they do, is it for me, and what do I do next. So: a concrete
+ * claim, a plain-language subline, two CTAs (one committal, one browsing)
+ * and a strip of verifiable trust signals — no vague slogans.
+ */
 export const Hero: FC = () => {
   const t = useTranslations('Hero');
 
+  const stats = [
+    { value: t('stats.projects.value'), label: t('stats.projects.label') },
+    { value: t('stats.delivery.value'), label: t('stats.delivery.label') },
+    { value: t('stats.reply.value'), label: t('stats.reply.label') },
+  ];
+
   return (
-    <section className="bg-gradient-to-b flex-col justify-center items-center from-cyan-950 to-gray-950 md:px-12 flex h-screen px-4">
-      <div className="container flex flex-col md:flex-row justify-center z-10 ">
-        <div className="max-w-6xl items-center text-center md:text-left flex flex-col gap-4">
-          <h1 className="text-3xl sm:text-4xl flex flex-col text-slate-100 text-balance md:text-6xl font-bold text-center leading-tight sm:mb-4">
-            <span>{t('title')}</span>
+    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-ink px-6 pb-20 pt-32 md:px-12 md:pt-36">
+      <Backdrop />
+
+      <div className="container-content relative z-10">
+        <div className="max-w-4xl">
+          <span className="inline-flex items-center gap-2 rounded-full border border-brand-400/30 bg-brand-500/10 px-3 py-1 text-xs font-medium text-brand-200">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-400" aria-hidden />
+            {t('eyebrow')}
+          </span>
+
+          <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] tracking-tight text-slate-50 sm:text-5xl md:text-6xl">
+            {t('title')}{' '}
+            <span className="bg-gradient-to-r from-brand-300 to-violet-400 bg-clip-text text-transparent">
+              {t('titleAccent')}
+            </span>
           </h1>
-          <p className="text-lg text-slate-100 md:text-xl mb-6 text-balance text-center">
-            <CodeCommands text={t('description')} />
+
+          <p className="mt-6 max-w-2xl text-balance text-lg leading-relaxed text-slate-400 md:text-xl">
+            {t('description')}
           </p>
-          <div className="flex flex-col md:flex-row gap-4">
+
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
-              href="#solutions"
-              className={cn(buttonVariants({ variant: 'brand', size: 'lg' }), 'text-lg')}
+              href="#contact"
+              className={cn(buttonVariants({ variant: 'brand', size: 'lg' }), 'text-base')}
             >
-              {t('startButton')}
+              {t('primaryCta')}
+            </Link>
+            <Link
+              href="#projects"
+              className={cn(
+                buttonVariants({ size: 'lg' }),
+                'border border-white/15 bg-white/5 text-base text-slate-100 shadow-none hover:bg-white/10 focus:ring-white/40'
+              )}
+            >
+              {t('secondaryCta')}
             </Link>
           </div>
+
+          <dl className="mt-14 grid max-w-2xl grid-cols-1 gap-6 border-t border-white/10 pt-8 sm:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <dt className="sr-only">{stat.label}</dt>
+                <dd>
+                  <span className="block text-2xl font-bold text-slate-50">{stat.value}</span>
+                  <span className="mt-1 block text-sm text-slate-500">{stat.label}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
       </div>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute top-0 left-0 w-full h-full bg-cover bg-fixed opacity-10"
-        style={{
-          backgroundSize: 'cover',
-          backgroundAttachment: 'fixed',
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23080926'/%3E%3Cstop offset='1' stop-color='transparent'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E")`,
-        }}
-      />
     </section>
   );
 };
+
+/**
+ * Decorative background: one soft indigo glow behind the copy plus a faint
+ * grid. Kept low-contrast so the headline stays the brightest thing on screen.
+ */
+const Backdrop: FC = () => (
+  <>
+    <div
+      aria-hidden
+      className="pointer-events-none absolute -left-1/4 -top-1/3 h-[70rem] w-[70rem] rounded-full bg-[radial-gradient(circle,rgba(99,102,241,0.20),transparent_62%)]"
+    />
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-0 opacity-[0.35]"
+      style={{
+        backgroundImage:
+          'linear-gradient(to right, rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.045) 1px, transparent 1px)',
+        backgroundSize: '72px 72px',
+        maskImage: 'radial-gradient(ellipse 80% 60% at 50% 30%, black, transparent)',
+        WebkitMaskImage: 'radial-gradient(ellipse 80% 60% at 50% 30%, black, transparent)',
+      }}
+    />
+    <div
+      aria-hidden
+      className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-ink"
+    />
+  </>
+);

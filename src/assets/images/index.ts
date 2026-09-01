@@ -17,6 +17,7 @@ import deville from './deville.png'
 import antoinetteBone from './theLaw.png'
 import carpinteriaRobaina from './carpinteriaRobaina.png'
 import soulConnection from './soul-connection.png'
+import mitaller from './mitaller.png'
 
 export {
   web,
@@ -38,4 +39,5 @@ export {
   landingPagePetslove,
   ComputerIllustration2,
   soulConnection,
+  mitaller,
 }

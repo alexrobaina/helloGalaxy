@@ -1,11 +1,12 @@
+import type { Metadata, Viewport } from 'next';
+import { getBaseUrl } from '@/lib/seo';
+
 interface RootLayoutProps {
 	children: React.ReactNode;
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
-
-export const metadata = {
-	metadataBase: new URL(baseUrl),
+export const metadata: Metadata = {
+	metadataBase: new URL(getBaseUrl()),
 	icons: {
 		icon: [
 			{ url: '/favicon.ico' },
@@ -20,18 +21,19 @@ export const metadata = {
 	},
 };
 
-export const viewport = {
+export const viewport: Viewport = {
 	width: 'device-width',
 	initialScale: 1,
-	themeColor: '#083344',
-	colorScheme: 'dark light',
+	themeColor: '#05070f',
+	colorScheme: 'dark',
 };
 
+/**
+ * Every page lives under `[locale]`, and that layout owns <html>/<body> so it
+ * can set `lang`. This one therefore renders its children untouched — when it
+ * also emitted <html><body>, the response contained two of each and the outer
+ * (document-root) <html> carried no lang attribute at all.
+ */
 export default function RootLayout({ children }: RootLayoutProps) {
-	// Perform any global setup or checks here
-	return (
-		<html>
-			<body>{children}</body>
-		</html>
-	);
+	return children;
 }

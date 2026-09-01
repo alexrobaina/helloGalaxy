@@ -1,7 +1,36 @@
-import { petsloveApp, carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinetteBone, soulConnection } from '@/assets/images'
+import { carpinteriaRobaina, rangeApp, aiChatbot, deville, antoinetteBone, mitaller } from '@/assets/images'
 
 export const projects = (t: (s: string) => string) => {
   return [
+    {
+      name: 'Mi Taller',
+      description: t('mitaller.description'),
+      tags: [
+        {
+          name: 'NextJs',
+          color: 'bg-yellow-500',
+        },
+        {
+          name: 'Typescript',
+          color: 'bg-rose-500',
+        },
+        {
+          name: 'Tailwind',
+          color: 'bg-pink-500',
+        },
+        {
+          name: 'Postgresql',
+          color: 'bg-fuchsia-500',
+        },
+        {
+          name: 'PDF',
+          color: 'bg-teal-500',
+        },
+      ],
+      image: mitaller,
+      appLink: 'https://mitaller.app/',
+      sourceCodeLink: null,
+    },
     {
       name: 'Deville Argentina',
       description: t('project1.description'),
@@ -23,49 +52,6 @@ export const projects = (t: (s: string) => string) => {
       appLink: 'https://devilleargentina.com.ar/',
       sourceCodeLink: null,
     },
-    {
-      image: soulConnection, 
-      name: 'Soul Connection',
-      description: t('project7.description'),
-      tags: [
-        {
-          name: 'NextJs',
-          color: 'bg-yellow-500',
-        },
-        {
-          name: 'Typescript',
-          color: 'bg-rose-500',
-        },
-        
-        {
-          name: 'Tailwind',
-          color: 'bg-pink-500',
-        },
-        {
-          name: 'i18N',
-          color: 'bg-rose-500',
-        },
-        {
-          name: 'NodeJs',
-          color: 'bg-green-500',
-        },
-        {
-          name: 'OpenAI',
-          color: 'bg-violet-500',
-        },
-       
-        {
-          name: 'Prisma',
-          color: 'bg-pink-500',
-        },
-        {
-          name: 'Postgresql',
-          color: 'bg-fuchsia-500',
-        },
-      ],
-      appLink: 'https://soul-connection.vercel.app/',
-      sourceCodeLink: null,
-    }, 
     {
       image: rangeApp,
       name: 'Range',
@@ -193,43 +179,6 @@ export const projects = (t: (s: string) => string) => {
       image: aiChatbot,
       sourceCodeLink: '',
       appLink: 'https://landing-page-ai-woad.vercel.app/en-US',
-    },
-    {
-      name: `Pet's love`,
-      description: t('project6.description'),
-      tags: [
-        {
-          name: 'ViteJs',
-          color: 'bg-teal-500',
-        },
-        {
-          name: 'React',
-          color: 'bg-cyan-500',
-        },
-        {
-          name: 'Tailwind',
-          color: 'bg-violet-500',
-        },
-        {
-          name: 'Postgresql',
-          color: 'bg-fuchsia-500',
-        },
-        {
-          name: 'Prisma',
-          color: 'bg-pink-500',
-        },
-        {
-          name: 'Typescript',
-          color: 'bg-rose-500',
-        },
-        {
-          name: 'Express',
-          color: 'bg-teal-500',
-        },
-      ],
-      image: petsloveApp,
-      sourceCodeLink: 'https://github.com/alexrobaina/frontend_petsLove',
-      appLink: 'https://petslove.app',
     },
   ]
 }
