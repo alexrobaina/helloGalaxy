@@ -22,10 +22,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     path: string;
     priority: number;
     changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'];
+    /**
+     * Pages that exist in one language only (US-market landing pages). They are
+     * emitted for the default locale with no hreflang alternates, because
+     * advertising a Spanish version that redirects away is an indexing bug.
+     */
+    defaultLocaleOnly?: boolean;
   };
 
   const paths: Entry[] = [
     { path: '', priority: 1, changeFrequency: 'weekly' },
+    { path: '/lead-response', priority: 0.9, changeFrequency: 'weekly', defaultLocaleOnly: true },
     { path: '/websites', priority: 0.9, changeFrequency: 'weekly' },
     ...templates.map((tpl) => ({
       path: `/websites/${tpl.slug}`,
@@ -40,13 +47,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
 
-  return paths.flatMap(({ path, priority, changeFrequency }) =>
-    locales.map((locale) => ({
+  return paths.flatMap(({ path, priority, changeFrequency, defaultLocaleOnly }) => {
+    if (defaultLocaleOnly) {
+      return [
+        {
+          url: `${baseUrl}/${DEFAULT_LOCALE}${path}`,
+          lastModified,
+          changeFrequency,
+          priority,
+        },
+      ];
+    }
+
+    return locales.map((locale) => ({
       url: `${baseUrl}/${locale}${path}`,
       lastModified,
       changeFrequency,
       priority,
       alternates: alternates(path),
-    }))
-  );
+    }));
+  });
 }
