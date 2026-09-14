@@ -76,10 +76,20 @@ async function saveToPostgres(pool: Pool, lead: Lead): Promise<void> {
   );
 }
 
+/** Escape lead-supplied text before it is interpolated into notification HTML. */
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 async function notifyByEmail(lead: Lead): Promise<void> {
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) return;
-  const to = process.env.LEADS_NOTIFY_EMAIL ?? 'team@hellogalaxy.dev';
+  const to = process.env.LEADS_NOTIFY_EMAIL ?? 'hello@hellogalaxy.dev';
   const from = process.env.LEADS_FROM_EMAIL ?? 'Hello Galaxy <onboarding@resend.dev>';
 
   const rows = [
@@ -92,7 +102,7 @@ async function notifyByEmail(lead: Lead): Promise<void> {
     ['Message', lead.message],
   ]
     .filter(([, v]) => v)
-    .map(([k, v]) => `<p><strong>${k}:</strong> ${String(v)}</p>`)
+    .map(([k, v]) => `<p><strong>${k}:</strong> ${escapeHtml(String(v))}</p>`)
     .join('');
 
   const res = await fetch('https://api.resend.com/emails', {

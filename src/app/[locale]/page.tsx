@@ -6,7 +6,6 @@ import { SolutionShowcase } from '@/components/SolutionShowcase';
 import { Process } from '@/components/Process';
 import { Projects } from '@/components/Projects';
 import { LogoCarrousel } from '@/components/LogoCarrousel';
-import { TerminalAI } from '@/components/TerminalAI';
 import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 import { CallToAction } from '@/components/CallToAction';
@@ -31,7 +30,6 @@ export default function Home() {
         <Process />
         <Projects />
         <LogoCarrousel />
-        <TerminalAI />
         <Contact />
       </main>
 
